@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+    
+
+    <title>Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南 - CordingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="學會使用Excel中的IF函數進行條件判斷，根據不同條件返回不同結果，提升數據處理效率，適用於財務分析和數據報表。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="https://CordingDog.github.io/images/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43J8HTSR3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43J8HTSR3H');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+          src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+            src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%B7%A8%E9%9B%86vba/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/python/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%AF%A6%E7%94%A8ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://CordingDog.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>12 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel-教程學習如何使用-if-函數進行條件判斷提升數據處理能力的實用指南">Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/%e6%a2%9d%e4%bb%b6%e5%88%a4%e6%96%b7IF%e5%87%bd%e6%95%b8.png" alt="學習Excel IF函數進行條件判斷，提升數據處理能力" loading="lazy">
+
+<p>在現代的辦公環境中，<strong>Excel</strong> 已經成為處理和分析數據的核心工具之一。其中，<strong>IF 函數</strong> 是一個不可或缺的邏輯判斷工具。無論你是分析財務報表、處理業務數據，還是執行其他需要進行條件判斷的工作，IF 函數都能根據不同條件返回不同結果，幫助你更精準地管理數據。</p>
+<hr>
+<h2 id="為什麼選擇-if-函數">為什麼選擇 IF 函數？</h2>
+<p><strong>IF 函數</strong> 的靈活性和強大功能，讓用戶能夠根據具體需求設置條件，並自動化處理數據。透過 IF 函數，你可以根據判斷條件自動生成報表、數據分析結果，並減少手動操作所帶來的錯誤風險。掌握這個函數，無疑會提升你處理複雜數據的能力。</p>
+<hr>
+<h2 id="if-函數的語法">IF 函數的語法</h2>
+<p>IF 函數的基本語法如下：</p>
+<p><code>=IF(條件, 條件為 TRUE 時返回的值, 條件為 FALSE 時返回的值)</code></p>
+<p><em><strong>條件</strong></em>：必須滿足的邏輯條件（例如：某個單元格中的數字是否大於 60）。
+<em><strong>TRUE 時返回的值</strong></em>：當條件成立時，函數將返回的結果。
+<em><strong>FALSE 時返回的值</strong></em>：當條件不成立時，函數將返回的結果。</p>
+<h3 id="範例-1利用-if-函數判斷成績是否及格">範例 1：利用 IF 函數判斷成績是否及格</h3>
+<p>假設我們有一個學生成績表，目標是根據分數判定學生是否及格。分數大於或等於 60 分為 &ldquo;及格&rdquo;，小於 60 分則為 &ldquo;不及格&rdquo;。</p>
+<p><em><strong>步驟 1：輸入成績數據</strong></em>
+首先，在 B 列輸入學生的成績。</p>
+<img src="../../images/excel/IF1.png" alt="Excel IF函數成績判斷範例" loading="lazy">
+
+<p><em><strong>步驟 2：使用 IF 函數</strong></em>
+接著，選擇評語欄（例如 C 列），輸入以下公式：</p>
+<p><code>=IF(B2&gt;=60, &quot;及格&quot;, &quot;不及格&quot;)</code></p>
+<img src="../../images/excel/IF8.png" alt="Excel IF函數自動填充" loading="lazy">
+
+<p>B2 代表的是成績所在的儲存格。如果成績大於等於 60，則返回 &ldquo;及格&rdquo;；否則返回 &ldquo;不及格&rdquo;。</p>
+<p><em><strong>步驟 3：自動填充公式</strong></em>
+使用 Excel 的自動填充功能，將此公式應用到其他儲存格中，便可快速生成所有學生的評語。</p>
+<img src="../../images/excel/IF7.png" alt="Excel IF函數自動填充" loading="lazy">
+
+<hr>
+<h3 id="範例-2巢狀-if-函數的應用">範例 2：巢狀 IF 函數的應用</h3>
+<p>有時候，我們可能需要更複雜的條件判斷，例如進一步細分 &ldquo;不及格&rdquo; 的情況。假設分數大於等於 60 是 &ldquo;及格&rdquo;，介於 35 到 59 分之間的是 &ldquo;不及格但可以補考&rdquo;，而小於 35 分的是 &ldquo;不及格且無法補考&rdquo;。</p>
+<h5 id="巢狀-if-函數語法">巢狀 IF 函數語法</h5>
+<p><code>=IF(B2&gt;=60, &quot;及格&quot;, IF(B2&gt;=35, &quot;不及格可補考&quot;, &quot;不及格無補考&quot;))</code></p>
+<p>這個公式結合了兩個 IF 函數，能夠實現多層次的條件判斷。</p>
+<p><em><strong>B2&gt;=60</strong></em>：顯示 &ldquo;及格&rdquo;。
+<em><strong>35 &lt;= B2 &lt; 60</strong></em>：顯示 &ldquo;不及格可補考&rdquo;。
+<em><strong>B2 &lt; 35：顯示</strong></em> &ldquo;不及格無補考&rdquo;。</p>
+<img src="../../images/excel/IF9.png" alt="Excel巢狀IF函數應用範例" loading="lazy">
+
+<hr>
+<h2 id="小結">小結</h2>
+<p>通過 IF 函數，你可以輕鬆實現條件判斷、自動化數據處理，大幅提升工作效率和數據準確性。無論你是分析成績、財務數據，還是其他需要邏輯判斷的工作，IF 函數都是不可或缺的工具。</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/AI/fliki.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>21 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="h5 d-block mb-3">Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E9%AB%98%E6%95%88%E8%A3%BD%E4%BD%9C%E5%93%A1%E5%B7%A5%E5%85%A5%E8%81%B7%E8%A1%A8.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>20 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="h5 d-block mb-3">Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E8%B6%85%E5%AF%A6%E7%94%A8CtrlG_II.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>19 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="h5 d-block mb-3">Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://CordingDog.github.io/"><img src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "https://CordingDog.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://CordingDog.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/mark.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://CordingDog.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+</html>

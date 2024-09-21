@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fomat on CordingDog</title>
+    <link>http://localhost:1313/tags/fomat/</link>
+    <description>Recent content in Fomat on CordingDog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Jun 2024 09:07:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/fomat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-vlookup/</link>
+      <pubDate>Sun, 23 Jun 2024 09:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-vlookup/</guid>
+      <description>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 Excel 中的 VLOOKUP 函數是一個非常實用的工具，用於在範圍內進行&amp;quot;垂直方向&amp;quot;的查找並返回相應的數值。無論是在日常工作中處理大規模數據，還是在分析資料時需要快速定位特定信息，VLOOKUP 都能提供極大的幫助。本文將詳細介紹 VLOOKUP 函數的基本語法和使用方法，並通過實例說明如何在工作中應用此函數。</description>
+    </item>
+    <item>
+      <title>完整指南：Excel 日期函數使用技巧及範例解析 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-date/</link>
+      <pubDate>Mon, 17 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-date/</guid>
+      <description>完整指南：Excel 日期函數使用技巧及範例解析 在日常的Excel使用中，日期函數是處理和分析日期相關數據不可或缺的工具。本文將詳細介紹幾個常用的Excel日期函數，包括如何創建日期值、返回當前日期、計算日期差距以及從日期中提取年、月、日等信息，讓您能更加靈活和高效地應用這些功能。&#xA;DATE 函數 語法： DATE(year, month, day)&#xA;year： 年份。 month： 月份。 day： 日期。 例子： =DATE(2023, 5, 1) 將返回 2023 年 5 月 1 日的日期。 TODAY 函數 語法： TODAY()</description>
+    </item>
+    <item>
+      <title>Excel中常用運算函數：MIN、MAX和AVERAGE - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-max/</link>
+      <pubDate>Sat, 15 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-max/</guid>
+      <description>Excel中常用運算函數：MIN、MAX和AVERAGE 在日常使用Excel進行數據分析和計算時，MIN、MAX和AVERAGE是三個非常常見且實用的函數。這些函數分別用於求取數據範圍中的最小值、最大值和平均值，它們能夠快速且準確地幫助我們分析數據，進而做出相應的決策或報告。&#xA;在使用這些函數之前，讓我們先複習一下Excel中範圍的表示方法：：代表範圍，例如A1：A10，表示從A1到A10的範圍。&#xA;範例：求一月銷售的最大值、最小值與平均值 最大值： 輸入公式 =MAX(B2:B12)，得到一月銷售的最大值。 最小值： 輸入公式 =MIN(B2:B12)，得到一月銷售的最小值。 平均值： 輸入公式 =AVERAGE(B2:B12)，得到一月銷售的平均值。 這些函數能夠快速計算出數據範圍中的極值和平均數，不僅使數據分析更加高效，也提升了報表製作的準確性和效率。無論是在財務報告、銷售分析還是其他數據處理任務中，MIN、MAX和AVERAGE都是不可或缺的工具，能夠大幅簡化我們的工作流程和分析過程。</description>
+    </item>
+    <item>
+      <title>Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-lrm/</link>
+      <pubDate>Wed, 12 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-lrm/</guid>
+      <description>Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用 在 Excel 中，有三個強大的函數可以幫助我們有效地分割文字，它們分別是 LEFT、RIGHT 和 MID 函數。這些函數可以根據指定的位置和字符數將文本字符串分割成不同的部分，非常適合於需要從文字中提取特定信息或進行格式化的任務。&#xA;LEFT 函數 LEFT 函數用於從文字的左側提取指定數量的字符。語法：</description>
+    </item>
+    <item>
+      <title>Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-if/</link>
+      <pubDate>Mon, 10 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-if/</guid>
+      <description>Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南 在現代的辦公環境中，Excel已經成為一個不可或缺的工具，特別是在處理和分析大量數據時。IF函數作為Excel中的一個核心功能之一，不僅可以根據特定的條件進行邏輯判斷，還能根據判斷結果返回不同的值或執行不同的操作。這使得它在各種應用場景中都表現出色，無論是在財務分析、數據報表製作、還是在日常的數據整理和處理中。&#xA;IF函數的靈活性和多功能性使得用戶可以根據具體需求設定各種不同的條件判斷，從而自動化地處理數據，減少手動操作的時間和錯誤的風險。掌握IF函數的使用不僅能夠提高工作效率，還能確保數據的準確性和一致性，這對於任何需要依賴Excel進行數據分析和報告的專業人士來說都是至關重要的技能。&#xA;在本文中，我們將深入探討IF函數的基本語法和應用技巧，幫助你理解如何有效地利用這個強大的函數來處理你的數據工作。無論你是新手還是有一定經驗的Excel使用者，這些知識都將為你提供實用而實際的解決方案。讓我們開始吧，深入了解如何在Excel中使用IF函數來進行條件判斷和數據處理！&#xA;範例：利用IF函數對成績判定及格與不及格 步驟一、定義評語判定標準 定義大於等於60分為及格，小於60分為不及格</description>
+    </item>
+    <item>
+      <title>提升Excel效率：掌握SUMIF與SUMIFS函數的使用技巧 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-sumif/</link>
+      <pubDate>Sat, 08 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-sumif/</guid>
+      <description>提升Excel效率：掌握SUMIF與SUMIFS函數的使用技巧 在 Excel 中，除了基本的 SUM 函數外，還有兩個非常實用的「兄弟」函數：SUMIF 和 SUMIFS。這兩個函數的名稱已經很直觀地告訴我們它們的作用，讓我們來看看它們如何幫助我們更精確地進行數字求和操作。&#xA;首先是 SUMIF 函數，這個函數可以根據一個條件範圍來計算符合指定條件的數字總和。例如，當我們需要計算某一類別的數量時，就可以使用 SUMIF 函數來快速獲取結果。舉例來說，假設我們有一個包含水果類別和對應數量的表格，我們可以使用 SUMIF 函數來計算所有水果的總數量。</description>
+    </item>
+    <item>
+      <title>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-dget/</link>
+      <pubDate>Wed, 05 Jun 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-dget/</guid>
+      <description>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 在之前的文章中，我們已經介紹了 VLOOKUP 函數在查找數據方面的強大功能。這個函數能夠根據指定的查找值，從資料表中快速找到對應的數據，對於處理大量數據來說，無疑是個非常實用的工具。然而，VLOOKUP 也有它的限制，比如它只能在查找目標位於第一欄的情況下工作，而且無法直接處理多條件查找的需求。如果你經常使用 Excel 進行數據管理，這些限制可能會讓你感到困擾。&#xA;今天，我們將介紹一個傳說中比 VLOOKUP 更強大的函數——DGET 函數。這個函數不僅能克服 VLOOKUP 的限制，還能提供更靈活的查找功能。無論是查找目標在範圍的任意位置，還是需要同時滿足多個條件，DGET 函數都能輕鬆應對。本文將詳細講解 DGET 函數的語法和使用方法，並通過具體的例子展示其強大的數據查找功能。</description>
+    </item>
+    <item>
+      <title>Excel教學：使用ROW()和COLUMN()自動更新行列的連續序號 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-row_column/</link>
+      <pubDate>Wed, 29 May 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-row_column/</guid>
+      <description>Excel教學：使用ROW()和COLUMN()函數自動更新刪除行列後的連續序號 是不是曾經遇過好不容易編排好的序號，卻因為刪除了某行列，又要重新編排一次的麻煩事呢？&#xA;在日常的 Excel 使用中，我們經常會遇到這樣的情況：需要頻繁刪減表格中的行列，而原本編排好的序號或行列數字突然不再連貫。例如，你可能已經設定了 A 列的序號從 1 到 11，但當你刪除其中的某些行時，這些序號就會出現斷裂，變得不再連續。這樣的情況下，不僅影響數據的美觀性和可讀性，更可能導致後續數據處理的混亂。</description>
+    </item>
+    <item>
+      <title>Excel乘法運算教學：直接乘法與PRODUCT函數的使用技巧 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-product/</link>
+      <pubDate>Wed, 22 May 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-product/</guid>
+      <description>Excel乘法運算教學：直接乘法與PRODUCT函數的使用技巧 在上一篇文章中，我們介紹了加法 SUM 函數的基本用法，讓大家能夠輕鬆處理數據的總和運算。加法是數據處理中的基礎操作之一，但僅僅掌握加法並不足以應對複雜的數據分析需求。今天，我們將進一步探討 Excel 中另一個基本且重要的運算：乘法。無論是在財務報表中計算總成本，還是在數據分析中進行複雜的乘積運算，掌握 Excel 中的乘法技巧都能大大提高工作效率。&#xA;乘法在 Excel 中的應用非常廣泛，特別是在處理大量數據時尤為重要。比如，在財務報表中，我們經常需要計算產品的總成本（單價乘以數量），或者在統計分析中計算多組數據的乘積。這些乘法運算如果手動逐一計算，不僅耗時耗力，還容易出錯。因此，熟悉 Excel 中的乘法操作，能夠幫助我們更快捷、準確地完成數據處理工作。</description>
+    </item>
+    <item>
+      <title>Excel 加法運算教學：使用 SUM 函數及 Alt&#43;快捷鍵 - CordingDog</title>
+      <link>http://localhost:1313/blog/excel-sum/</link>
+      <pubDate>Fri, 17 May 2024 18:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/excel-sum/</guid>
+      <description>Excel 加法運算教學：使用 SUM 函數及 Alt+ 快捷鍵 Excel 是一款廣泛應用於數據處理和分析的強大工具，而加法運算則是其中最基本且常用的數學運算之一。通過掌握 Excel 中的加法運算技巧，您可以更加高效地處理和分析數據，這對於日常工作中的各種任務至關重要。</description>
+    </item>
+  </channel>
+</rss>

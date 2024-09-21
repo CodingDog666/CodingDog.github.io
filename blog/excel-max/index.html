@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+    
+
+    <title>Excel中常用運算函數：MIN、MAX 和 AVERAGE 詳細教學 - CordingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="了解如何在 Excel 中使用 MIN、MAX 和 AVERAGE 函數來進行數據分析。這些函數能幫助你快速計算數據範圍中的最小值、最大值和平均值，讓你的數據處理更有效率。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="https://CordingDog.github.io/images/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43J8HTSR3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43J8HTSR3H');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+          src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+            src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%B7%A8%E9%9B%86vba/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/python/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%AF%A6%E7%94%A8ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://CordingDog.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>09 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel中常用運算函數minmax-和-average-詳細教學">Excel中常用運算函數：MIN、MAX 和 AVERAGE 詳細教學</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/MinMax%e5%92%8cAverage.png" alt="Excel運算函數MIN、MAX和AVERAGE的使用教學" loading="lazy">
+
+<p>在日常使用 <strong>Excel</strong> 進行數據分析時，<strong>MIN</strong>、<strong>MAX</strong> 和 <strong>AVERAGE</strong> 是三個非常實用且常用的函數。這些函數分別用來計算數據範圍中的 <strong>最小值</strong>、<strong>最大值</strong> 和 <strong>平均值</strong>，能夠幫助你快速分析和處理大量數據，並做出更準確的業務決策或報表。</p>
+<h3 id="excel-中的範圍表示法">Excel 中的範圍表示法</h3>
+<p>在進行數據分析前，我們來複習一下 Excel 中如何表示範圍。符號 <strong><code>:</code></strong> 用來表示範圍，例如 <strong><code>A1:A10</code></strong> 表示從 A1 到 A10 的所有儲存格。</p>
+<hr>
+<h2 id="使用-max-函數查找最大值">使用 MAX 函數查找最大值</h2>
+<p><strong>MAX 函數</strong> 用來返回數據範圍中的最大值。它的語法非常簡單：</p>
+<p><code>=MAX(範圍)</code></p>
+<h3 id="示例">示例：</h3>
+<p>假設我們有一個月的銷售數據，現在我們需要找到 1 月份的最大銷售額。可以在儲存格中輸入以下公式：</p>
+<p><code>=MAX(B2:B12)</code></p>
+<p>這樣 Excel 會返回 1 月銷售的最大值：</p>
+<img src="../../images/excel/MAX2.png" alt="Excel中使用MAX函數來查找最大值的範例" loading="lazy">
+
+<h2 id="使用-min-函數查找最小值">使用 MIN 函數查找最小值</h2>
+<p>MIN 函數 用來返回數據範圍中的最小值。它的語法如下：</p>
+<p><code>=MIN(範圍)</code></p>
+<h3 id="示例-1">示例：</h3>
+<p>同樣，假設我們需要找到 1 月份銷售數據中的最小銷售額，公式如下：</p>
+<p><code>=MIN(B2:B12)</code></p>
+<p>輸入公式後，Excel 會返回數據範圍內的最小值：</p>
+<img src="../../images/excel/MAX3.png" alt="Excel中使用MIN函數來查找最小值的範例" loading="lazy">
+
+<h2 id="使用-average-函數計算平均值">使用 AVERAGE 函數計算平均值</h2>
+<p>AVERAGE 函數 是 Excel 中用來計算數據範圍內平均值的函數。語法如下：</p>
+<p><code>=AVERAGE(範圍)</code></p>
+<h3 id="示例-2">示例：</h3>
+<p>假設我們需要計算 1 月份銷售數據的平均值，可以使用以下公式：</p>
+<p><code>=AVERAGE(B2:B12)</code></p>
+<p>Excel 將會返回 1 月份銷售數據的平均值：</p>
+<img src="../../images/excel/MAX4.png" alt="Excel中使用AVERAGE函數來計算平均值的範例" loading="lazy">
+
+<hr>
+<h2 id="為什麼-minmax-和-average-是數據分析的核心工具">為什麼 MIN、MAX 和 AVERAGE 是數據分析的核心工具？</h2>
+<p>這些運算函數讓數據分析變得更加快速和精準。在處理大量數據時，MIN、MAX 和 AVERAGE 函數可以立即計算數據的極值和平均數，幫助你快速得出有價值的商業結論。無論是財務報表、銷售分析，還是其他數據處理任務，這些函數都是你不可或缺的工具。</p>
+<h2 id="小結">小結</h2>
+<p>使用 Excel 的 MIN、MAX 和 AVERAGE 函數，你可以更高效地處理大量數據，快速得到所需的結果。這些函數不僅簡化了日常的數據分析工作，還幫助你提高了數據報告的準確性。快試試這些函數，讓你的 Excel 操作更上一層樓吧！</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/AI/fliki.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>21 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="h5 d-block mb-3">Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E9%AB%98%E6%95%88%E8%A3%BD%E4%BD%9C%E5%93%A1%E5%B7%A5%E5%85%A5%E8%81%B7%E8%A1%A8.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>20 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="h5 d-block mb-3">Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E8%B6%85%E5%AF%A6%E7%94%A8CtrlG_II.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>19 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="h5 d-block mb-3">Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://CordingDog.github.io/"><img src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "https://CordingDog.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://CordingDog.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/mark.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://CordingDog.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+</html>

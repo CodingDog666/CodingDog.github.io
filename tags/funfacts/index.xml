@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FunFacts on FurryTails</title>
+    <link>http://localhost:1313/tags/funfacts/</link>
+    <description>Recent content in FunFacts on FurryTails</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Aug 2024 10:07:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/funfacts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FurryTails|Cat Eye Language Revealed: Understanding Your Cat’s Emotions</title>
+      <link>http://localhost:1313/blog/funfacts-cateyes/</link>
+      <pubDate>Sat, 10 Aug 2024 10:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/funfacts-cateyes/</guid>
+      <description>FurryTails|Cat Eye Language Revealed: Understanding Your Cat’s Emotions Today, we unveil the mysteries of your cat’s eyes and explore the various emotions expressed through their gaze!</description>
+    </item>
+    <item>
+      <title>FurryTails|Why Are Cats So Protective of Their Paws? Understanding Their Sacred Status</title>
+      <link>http://localhost:1313/blog/funfacts-catpaws/</link>
+      <pubDate>Tue, 06 Aug 2024 10:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/funfacts-catpaws/</guid>
+      <description>FurryTails|Why Are Cats So Protective of Their Paws? Understanding Their Sacred Status This question often sparks heated debates among behavioral experts, as it involves various urban legends about cat behavior.</description>
+    </item>
+    <item>
+      <title>FurryTails|Cat Language Revealed! Decode Your Cat&#39;s Ear Signals and Become a Meow Language Master!</title>
+      <link>http://localhost:1313/blog/funfacts-catear/</link>
+      <pubDate>Sat, 03 Aug 2024 10:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/funfacts-catear/</guid>
+      <description>FurryTails|Cat Language Revealed! Decode Your Cat&amp;rsquo;s Ear Signals and Become a Meow Language Master!</description>
+    </item>
+  </channel>
+</rss>

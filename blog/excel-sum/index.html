@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+    
+
+    <title>Excel加法運算教學：使用 SUM 函數及 Alt&#43; 快捷鍵 - CordingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Excel 是一款強大的數據處理工具，SUM 函數是其中最常見的運算之一。本文將詳細介紹如何使用 Excel 的 SUM 函數及快捷鍵 Alt&#43; 進行加法運算。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="https://CordingDog.github.io/images/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43J8HTSR3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43J8HTSR3H');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+          src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+            src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%B7%A8%E9%9B%86vba/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/python/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%AF%A6%E7%94%A8ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://CordingDog.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>05 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel-加法運算教學使用-sum-函數及-alt-快捷鍵">Excel 加法運算教學：使用 SUM 函數及 Alt+ 快捷鍵</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/%e5%8a%a0%e6%b3%95%e9%81%8b%e7%ae%97.png" alt="Excel 加法運算教學" loading="lazy">
+
+<p><strong>Excel</strong> 是一款廣泛應用於數據處理和分析的強大工具，而加法運算則是其中最基本且常用的數學運算之一。通過掌握 <strong>Excel 中的加法運算技巧</strong>，您可以更加高效地處理和分析數據，這對於日常工作中的各種任務至關重要。</p>
+<p>在 Excel 中，最常見的進行加法運算的方法是使用 <strong>SUM 函數</strong>。這個函數允許用戶輕鬆地計算範圍內數字的總和，無論是一列數據、一個區域還是整個工作表。<strong>SUM 函數</strong> 和 <strong>Alt+ 快捷鍵</strong> 的結合使用可以進一步提高操作效率。</p>
+<h2 id="為什麼使用-sum-函數和-alt-快捷鍵">為什麼使用 SUM 函數和 Alt+ 快捷鍵？</h2>
+<p>掌握這些加法運算的技巧不僅可以提高您在 Excel 中的操作效率，還能確保計算的準確性和一致性。這些技能不僅適用於日常的數據處理，還能應用於財務報表、預算編制、數據分析等各種專業場景中，為您的工作帶來更大的便利和價值。</p>
+<hr>
+<h2 id="使用-sum-函數進行加法運算">使用 SUM 函數進行加法運算</h2>
+<p>當我們需要計算一個範圍內的數字總和時，<strong>SUM 函數</strong> 是最常用的工具之一。與逐一相加（如 <code>=A1 + A2 + A3</code>）相比，使用 <strong>SUM 函數</strong> 會更簡便快捷。</p>
+<h3 id="sum-函數的語法">SUM 函數的語法</h3>
+<p>SUM 函數的基本語法是：</p>
+<p><code>=SUM(數字1, 數字2, ...)</code></p>
+<h5 id="例子">例子：</h5>
+<p><code>=SUM(A1, B1, C1)</code>
+這個公式將計算儲存格 A1、B1 和 C1 的總和。</p>
+<h3 id="使用範圍進行加法運算">使用範圍進行加法運算</h3>
+<p>Excel 支持通過指定範圍進行加法運算，使用冒號（:）來表示範圍。例如：
+<code>=SUM(A1:A3)</code></p>
+<p>此公式會計算範圍 A1 到 A3 內所有儲存格的總和。</p>
+<img src="../../images/excel/ExcelFormulas1.png" alt="使用 SUM 函數進行範圍加法運算" loading="lazy">
+
+<hr>
+<h2 id="使用-alt-快捷鍵進行加法運算">使用 Alt+ 快捷鍵進行加法運算</h2>
+<p>除了手動輸入公式，您還可以通過 Alt+ 快捷鍵 快速完成加法運算。這個快捷鍵相當於一鍵自動插入 SUM 函數，非常適合處理大型數據。</p>
+<h3 id="使用-alt-快捷鍵的步驟">使用 Alt+ 快捷鍵的步驟：</h3>
+<ol>
+<li><em><strong>將滑鼠指標定位到希望顯示總和的儲存格。</strong></em></li>
+<li><em><strong>按下 Alt+，Excel 會自動插入 SUM 函數，選取上方或左方的範圍。</strong></em></li>
+<li><em><strong>按下 Enter 鍵，Excel 即可自動計算總和。</strong></em></li>
+</ol>
+<h5 id="例子-1">例子：</h5>
+<p>假設我們有如下數據：</p>
+<img src="../../images/excel/ExcelFormulas2.png" alt="使用 Alt&#43; 快捷鍵進行加法運算" loading="lazy">
+
+<p>我們將滑鼠定位到 E1 儲存格，然後按下 Alt+，Excel 將自動插入以下公式：
+<code>=SUM(A1:D1)</code></p>
+<p>按下 Enter 鍵後，E1 儲存格將顯示 A1 到 D1 的總和結果。</p>
+<hr>
+<h2 id="小結">小結</h2>
+<p>通過學習和掌握 SUM 函數 和 Alt+ 快捷鍵，您可以快速而準確地進行數據的加法運算。這些技巧在處理數據分析、財務報表以及日常工作中都將為您帶來巨大的便利與效率。</p>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/AI/fliki.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>21 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="h5 d-block mb-3">Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E9%AB%98%E6%95%88%E8%A3%BD%E4%BD%9C%E5%93%A1%E5%B7%A5%E5%85%A5%E8%81%B7%E8%A1%A8.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>20 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="h5 d-block mb-3">Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E8%B6%85%E5%AF%A6%E7%94%A8CtrlG_II.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>19 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="h5 d-block mb-3">Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://CordingDog.github.io/"><img src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "https://CordingDog.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://CordingDog.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/mark.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://CordingDog.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+</html>

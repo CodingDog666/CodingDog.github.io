@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+    
+
+    <title>Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="製作2022年入職的員工資訊表不需要手動輸入。利用Excel的自訂格式功能，您可以快速高效地完成工號、部門等欄位的填寫，節省時間且避免出錯。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon">
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9Q1DJ1Z5H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G9Q1DJ1Z5H');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="http://localhost:1313/"><img class="img-fluid"
+          src="http://localhost:1313/images/logo1.png" alt="CordingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="http://localhost:1313/"><img class="img-fluid"
+            src="http://localhost:1313/images/logo1.png" alt="CordingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/categories/%E5%B7%A8%E9%9B%86vba/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/categories/python/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/categories/%E5%AF%A6%E7%94%A8ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="http://localhost:1313//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>27 May 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel教學製作2022年入職員工資訊表的高效方法">Excel教學：製作2022年入職員工資訊表的高效方法</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/%e9%ab%98%e6%95%88%e8%a3%bd%e4%bd%9c%e5%93%a1%e5%b7%a5%e5%85%a5%e8%81%b7%e8%a1%a8.png" alt="高效製作2022年員工入職表，利用Excel自訂格式技巧" loading="lazy">
+
+<p>在日常工作中，我們經常需要處理大量員工數據，尤其是製作員工入職表時，逐字逐欄地手動輸入數據不僅耗時，還容易出錯。今天，我們將介紹如何利用 <strong>Excel 自訂格式功能</strong> 來快速完成這項任務，幫助您節省時間並提高準確性。這個技巧能讓您快速設定工號、部門、性別和入職時間等欄位，從而大幅提高工作效率。</p>
+<hr>
+<h2 id="為什麼使用自訂格式">為什麼使用自訂格式？</h2>
+<p><strong>自訂格式</strong> 是 Excel 提供的一個強大功能，它可以根據您的需求自動替換輸入的數字，無需手動調整每個單元格格式。這在處理批量數據時尤為實用，尤其是在製作如員工入職表等具有標準化輸入需求的文件時，能幫助您確保數據的一致性並減少出錯機會。</p>
+<p>例如，在設置員工工號時，我們可以使用自訂格式來自動生成帶有年份前綴的工號，如<code>20220001</code>。類似的應用還包括設置部門名稱、性別代碼以及入職日期等。接下來，我們將通過具體範例進一步說明這些功能的使用方法。</p>
+<hr>
+<h2 id="自訂格式的應用場景">自訂格式的應用場景</h2>
+<p>自訂格式不僅適用於處理簡單的數據輸入，還能在以下幾個場景中發揮重要作用：</p>
+<ol>
+<li><strong>財務報表</strong>：可用於設置貨幣格式、自動顯示小數點位數等。</li>
+<li><strong>數據分析</strong>：幫助自動填充特定格式的統計數據。</li>
+<li><strong>商業報告</strong>：設置日期、時間和自動序號生成，避免手動輸入的錯誤。</li>
+</ol>
+<hr>
+<h2 id="步驟詳解如何應用自訂格式">步驟詳解：如何應用自訂格式</h2>
+<h3 id="1-設定工號欄位">1. 設定工號欄位</h3>
+<p>使用自訂格式自動生成工號，能大幅節省時間並確保統一格式。</p>
+<img src="../../images/excel/Ctrl1-1.png" alt="設定Excel工號欄位的自訂格式" loading="lazy">
+
+<ol>
+<li>框選工號欄位，按下<code>Ctrl+1</code>，選擇「自訂」格式。</li>
+<li>在「類型」框中輸入 <code>20220000</code>，這樣當您輸入數字時，會自動顯示為類似於 <code>20220001</code> 的格式。</li>
+<li>測試輸入數值，確認是否顯示正確。</li>
+</ol>
+<h3 id="2-設定部門欄位">2. 設定部門欄位</h3>
+<p>設置部門名稱時，您可以通過自訂格式快速生成具體部門名稱，避免重複輸入。</p>
+<img src="../../images/excel/Ctrl1-5.png" alt="設定Excel部門欄位的自訂格式" loading="lazy">
+
+<ol>
+<li>框選部門欄位，按<code>Ctrl+1</code>，進入自訂格式選項。</li>
+<li>在「類型」框中輸入 <code>業務0部</code>，這樣輸入數字時會自動顯示為「業務1部」、「業務2部」等格式。</li>
+</ol>
+<h3 id="3-設定性別欄位">3. 設定性別欄位</h3>
+<p>使用條件格式自動顯示「男」或「女」性別，避免數據輸入錯誤。</p>
+<img src="../../images/excel/Ctrl1-8.png" alt="設定Excel性別欄位的自訂格式" loading="lazy">
+
+<ol>
+<li>框選性別欄位，按下<code>Ctrl+1</code>。</li>
+<li>在「類型」框中輸入 <code>[=1]&quot;男&quot;;[=2]&quot;女&quot;</code>，輸入1顯示「男」，輸入2顯示「女」。</li>
+</ol>
+<h3 id="4-設定入職時間欄位">4. 設定入職時間欄位</h3>
+<p>設定入職日期時，可以通過自訂格式自動顯示具體日期格式。</p>
+<img src="../../images/excel/Ctrl1-9.png" alt="設定Excel入職時間欄位的自訂格式" loading="lazy">
+
+<ol>
+<li>框選入職時間欄位，按下<code>Ctrl+1</code>。</li>
+<li>在「類型」框中輸入 <code>2022年00月00日</code>，這樣輸入的數字會自動顯示為完整的日期格式，如「2022年11月09日」。</li>
+</ol>
+<hr>
+<h2 id="常見問題與錯誤排查">常見問題與錯誤排查</h2>
+<p>在使用自訂格式時，您可能會遇到一些常見問題。以下是一些解決方法：</p>
+<ul>
+<li><strong>為什麼自訂格式無法生效？</strong>
+<ul>
+<li>檢查您是否正確選擇了「自訂格式」，並且確認格式代碼是否正確輸入。</li>
+</ul>
+</li>
+<li><strong>輸入後格式顯示不符？</strong>
+<ul>
+<li>確保數據格式（如數字、日期等）與自訂格式類型一致。例如，日期欄位需設置為「日期」類型，才能正確顯示。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="更多高效技巧">更多高效技巧</h2>
+<p>自訂格式只是 Excel 提高效率的其中一項功能，您還可以通過學習以下進階技巧，進一步提升工作表的處理效率：</p>
+<ul>
+<li><strong>Excel 樞紐分析</strong>：快速匯總和分析大量數據。</li>
+<li><strong>VLOOKUP 函數</strong>：實現多表間數據查找。</li>
+<li><strong>Excel 宏與 VBA</strong>：自動化複雜操作，節省更多時間。</li>
+</ul>
+<hr>
+<h2 id="小結">小結</h2>
+<p>利用 Excel 的自訂格式功能，您可以有效避免手動重複輸入的繁瑣工作。不僅能提升工作效率，還能確保數據的正確性，讓您輕鬆完成員工資訊表的製作。若想進一步提升您的 Excel 技能，不妨學習更多進階功能，如樞紐分析和 VBA 自動化，這將使您的工作更加輕鬆高效。</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E6%97%A5%E6%9C%9F%E5%87%BD%E6%95%B8%E4%BD%BF%E7%94%A8%E8%A9%B3%E8%A7%A3.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>17 Jun 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/excel-date/" class="h5 d-block mb-3">完整指南：Excel 日期函數使用技巧及範例解析 - CordingDog</a>
+            <a href="http://localhost:1313/blog/excel-date/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/MinMax%E5%92%8CAverage.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>15 Jun 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/excel-max/" class="h5 d-block mb-3">Excel中常用運算函數：MIN、MAX 和 AVERAGE 詳細教學 - CordingDog</a>
+            <a href="http://localhost:1313/blog/excel-max/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/LeftRight%E5%92%8CMid.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>12 Jun 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/excel-lrm/" class="h5 d-block mb-3">Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用 - CordingDog</a>
+            <a href="http://localhost:1313/blog/excel-lrm/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="http://localhost:1313/"><img src="http://localhost:1313/images/logo1.png" alt="CordingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "http://localhost:1313/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://localhost:1313/plugins/slick/slick.min.js"></script>
+
+<script src="http://localhost:1313/plugins/venobox/venobox.min.js"></script>
+
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
+
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
+
+<script src="http://localhost:1313/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="http://localhost:1313/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+</html>

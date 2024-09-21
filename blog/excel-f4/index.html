@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+    
+
+    <title>掌握Excel快捷鍵：用F4重複動作與執行絕對參照功能 - CordingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="學習如何使用Excel的F4快捷鍵來重複動作並切換相對參照與絕對參照，提升工作效率。這篇文章詳細介紹了F4的使用方法及其在實際應用中的案例。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://CordingDog.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="https://CordingDog.github.io/images/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-43J8HTSR3H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-43J8HTSR3H');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+          src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://CordingDog.github.io/"><img class="img-fluid"
+            src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%B7%A8%E9%9B%86vba/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/python/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CordingDog.github.io/categories/%E5%AF%A6%E7%94%A8ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://CordingDog.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>15 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="掌握excel快捷鍵用f4重複動作與執行絕對參照功能">掌握Excel快捷鍵：用F4重複動作與執行絕對參照功能</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/%e5%bf%ab%e6%8d%b7%e9%8d%b5F4.png" alt="掌握Excel快捷鍵F4重複動作與執行絕對參照功能" loading="lazy">
+
+<p>今天，我們要分享 Excel 中非常方便且實用的快捷鍵 <strong>F4</strong>。這個快捷鍵具備兩大功能：<strong>“重複之前動作”</strong> 和 <strong>“切換公式中的相對參照與絕對參照”</strong>。這兩個功能不僅簡單易用，而且能極大地提升你的工作效率，讓你在處理 Excel 任務時事半功倍。</p>
+<hr>
+<h2 id="為什麼f4快捷鍵如此重要">為什麼F4快捷鍵如此重要？</h2>
+<p>在日常的 Excel 操作中，無論是進行數據輸入、格式設置，還是編輯公式，我們經常需要重複某些特定的動作。手動重複這些操作不僅耗時，而且容易出錯。此時，<strong>F4快捷鍵</strong> 的“重複之前動作”功能就能派上用場。只需按一下 F4 鍵，Excel 便會自動重複你上一次的操作，無需再次手動執行，節省了大量時間和精力。</p>
+<p>此外，F4 另一個實用的功能是 <strong>“切換相對參照與絕對參照”</strong>，在編寫 Excel 公式時，我們經常需要使用相對參照（如 A1）和絕對參照（如 $A$1）。手動切換參照格式可行，但快捷鍵 F4 能讓這一過程變得更加高效。</p>
+<hr>
+<h2 id="功能一重複之前的動作">功能一：重複之前的動作</h2>
+<h3 id="具體步驟">具體步驟</h3>
+<p><strong>F4 鍵</strong> 的第一個功能是 <strong>“重複之前的動作”</strong>。假設您需要在表格中插入多行，通常會右鍵點選插入功能。如果您已經插入了一行，接著還需要插入更多行，只需按下 F4 鍵，即可重複插入動作，而不必重新右鍵選擇插入。</p>
+<ol>
+<li>右鍵點選需要插入的位置，選擇 <strong>“插入”</strong>。</li>
+<li>完成插入動作後，按下 <strong>F4 鍵</strong>，即可自動重複插入動作。</li>
+</ol>
+<img src="../../images/excel/F4-1.png" alt="Excel F4 快捷鍵重複插入行動作" loading="lazy">
+
+<hr>
+<h2 id="功能二切換相對參照與絕對參照">功能二：切換相對參照與絕對參照</h2>
+<p><strong>F4 鍵</strong> 的第二個功能是 <strong>“切換公式中的相對參照與絕對參照”</strong>。這在公式運算中非常有用，特別是當您需要快速切換引用方式時。當我們在公式中按下 F4，可以看到公式中的單元格引用會自動切換。</p>
+<h3 id="使用-f4-切換參照方式">使用 F4 切換參照方式</h3>
+<p>按下 F4 鍵時，會在以下四種模式中循環：</p>
+<ul>
+<li><strong>A$1</strong>：鎖定行。</li>
+<li><strong>$A1</strong>：鎖定列。</li>
+<li><strong>A1</strong>：行列都不鎖定。</li>
+<li><strong>$A$1</strong>：行列都鎖定。</li>
+</ul>
+<h3 id="具體案例計算產品不良率">具體案例：計算產品不良率</h3>
+<p>我們將通過一個範例來介紹如何使用 F4 鎖定參照。假設您正在計算產品不良率，不良率的公式是 <strong>“異常品數量/總投入數量”</strong>，其中總投入數量需要鎖定不變。</p>
+<ol>
+<li>在 C3 儲存格中輸入公式 <code>=B3/B2</code>。</li>
+<li>使用下拉填充功能，將公式填充到 C4、C5 等儲存格。此時，您會發現公式的結果不正確，因為分母隨著公式位置變動。</li>
+</ol>
+<p>為解決這個問題，我們可以使用 F4 鎖定分母。</p>
+<ol start="3">
+<li><strong>鎖定分母步驟</strong>：
+<ul>
+<li>點選公式中的 B2，按下 F4 鍵，將其變為 <strong>$B$2</strong>，鎖定該單元格。</li>
+<li>再次使用自動填充，您會發現公式已正確應用，分母固定不變。</li>
+</ul>
+</li>
+</ol>
+<p>範例公式如下：</p>
+<p><code>=B3/$B$2</code>
+<code>=B4/$B$2</code>
+<code>=B5/$B$2</code></p>
+<img src="../../images/excel/F4-4.png" alt="Excel F4 快捷鍵鎖定絕對參照範例" loading="lazy">
+
+<h2 id="小結">小結</h2>
+<p>透過 F4 快捷鍵，您可以快速重複動作並輕鬆切換參照類型，這將極大地提升您的工作效率。無論是在數據輸入、格式設置還是公式編寫中，F4 都是一個不可或缺的工具。希望這篇文章能幫助您掌握這一實用技巧，讓 Excel 的操作變得更加輕鬆。</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/AI/fliki.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>21 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="h5 d-block mb-3">Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/ai-fliki/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E9%AB%98%E6%95%88%E8%A3%BD%E4%BD%9C%E5%93%A1%E5%B7%A5%E5%85%A5%E8%81%B7%E8%A1%A8.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>20 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="h5 d-block mb-3">Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-cellfomat/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CordingDog.github.io/images/excel%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2/%E8%B6%85%E5%AF%A6%E7%94%A8CtrlG_II.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>19 Sep 2024</span>
+              
+            </div>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="h5 d-block mb-3">Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 - CordingDog</a>
+            <a href="https://CordingDog.github.io/blog/excel-ctrlg-filled/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://CordingDog.github.io/"><img src="https://CordingDog.github.io/images/logo1.png" alt="CordingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "https://CordingDog.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://CordingDog.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/mark.js"></script>
+
+<script src="https://CordingDog.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://CordingDog.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+</html>
