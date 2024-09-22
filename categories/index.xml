@@ -6,8 +6,15 @@
     <description>Recent content in Categories on CordingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Sep 2024 10:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 09:07:47 +0800</lastBuildDate>
     <atom:link href="https://CordingDog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VBA巨集</title>
+      <link>https://CordingDog.github.io/categories/vba%E5%B7%A8%E9%9B%86/</link>
+      <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
+      <guid>https://CordingDog.github.io/categories/vba%E5%B7%A8%E9%9B%86/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://CordingDog.github.io/categories/ai/</link>
@@ -18,7 +25,7 @@
     <item>
       <title>Excel</title>
       <link>https://CordingDog.github.io/categories/excel/</link>
-      <pubDate>Fri, 20 Sep 2024 18:07:47 +0800</pubDate>
+      <pubDate>Sat, 21 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CordingDog.github.io/categories/excel/</guid>
       <description></description>
     </item>
