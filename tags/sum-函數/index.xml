@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SUM 函數 on CodingDog</title>
-    <link>http://localhost:1313/tags/sum-%E5%87%BD%E6%95%B8/</link>
+    <link>https://CodingDog666.github.io/tags/sum-%E5%87%BD%E6%95%B8/</link>
     <description>Recent content in SUM 函數 on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Sep 2024 18:07:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sum-%E5%87%BD%E6%95%B8/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://CodingDog666.github.io/tags/sum-%E5%87%BD%E6%95%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Excel加法運算教學：使用 SUM 函數及 Alt&#43; 快捷鍵 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-sum/</link>
+      <link>https://CodingDog666.github.io/blog/excel-sum/</link>
       <pubDate>Thu, 05 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-sum/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-sum/</guid>
       <description>Excel 加法運算教學：使用 SUM 函數及 Alt+ 快捷鍵 Excel 是一款廣泛應用於數據處理和分析的強大工具，而加法運算則是其中最基本且常用的數學運算之一。通過掌握 Excel 中的加法運算技巧，您可以更加高效地處理和分析數據，這對於日常工作中的各種任務至關重要。</description>
     </item>
   </channel>

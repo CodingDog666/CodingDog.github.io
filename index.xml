@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CodingDog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://CodingDog666.github.io/</link>
     <description>Recent content on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Sep 2024 09:07:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://CodingDog666.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
-      <link>http://localhost:1313/blog/vba-introduction/</link>
+      <link>https://CodingDog666.github.io/blog/vba-introduction/</link>
       <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/vba-introduction/</guid>
+      <guid>https://CodingDog666.github.io/blog/vba-introduction/</guid>
       <description>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</description>
     </item>
     <item>
       <title>Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 - CordingDog</title>
-      <link>http://localhost:1313/blog/ai-fliki/</link>
+      <link>https://CodingDog666.github.io/blog/ai-fliki/</link>
       <pubDate>Sat, 21 Sep 2024 10:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/ai-fliki/</guid>
+      <guid>https://CodingDog666.github.io/blog/ai-fliki/</guid>
       <description>Fliki AI：強大的文字轉視頻工具實測心得與詳細評測 隨著人工智慧的飛速發展，視頻製作已經進入了全新時代。如今，短視頻成為主流，並快速吸引觀眾注意力。而 Fliki AI 是一款專為內容創作者、市場營銷專家及業務人員設計的卓越工具，能夠幫助用戶迅速將文字內容轉換成高質量的視頻，節省大量時間與精力。&#xA;Fliki AI 是什麼？ Fliki AI 是一個多功能的視頻製作平台，僅需提供博客文章連結或粘貼文本，它便會自動生成專業級視頻，包括視覺素材選擇和語音解說。該平台通過簡單的操作，讓視頻製作變得快捷高效。</description>
     </item>
     <item>
       <title>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-vlookup/</link>
+      <link>https://CodingDog666.github.io/blog/excel-vlookup/</link>
       <pubDate>Sat, 21 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-vlookup/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-vlookup/</guid>
       <description>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 VLOOKUP 函數 是 Excel 中用來進行垂直查找的強大工具，無論是處理大規模數據還是快速定位資料，VLOOKUP 都能提升數據處理效率。本文將從 VLOOKUP 函數的基礎用法 開始，逐步講解如何在各種情況下應用這個函數，並進一步介紹如何使用 數組公式 來擴展 VLOOKUP 的應用。</description>
     </item>
     <item>
       <title>Excel教學：製作2022年入職員工資訊表的高效方法 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-cellfomat/</link>
+      <link>https://CodingDog666.github.io/blog/excel-cellfomat/</link>
       <pubDate>Fri, 20 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-cellfomat/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-cellfomat/</guid>
       <description>Excel教學：製作2022年入職員工資訊表的高效方法 在日常工作中，我們經常需要處理大量員工數據，尤其是製作員工入職表時，逐字逐欄地手動輸入數據不僅耗時，還容易出錯。今天，我們將介紹如何利用 Excel 自訂格式功能 來快速完成這項任務，幫助您節省時間並提高準確性。這個技巧能讓您快速設定工號、部門、性別和入職時間等欄位，從而大幅提高工作效率。&#xA;為什麼使用自訂格式？ 自訂格式 是 Excel 提供的一個強大功能，它可以根據您的需求自動替換輸入的數字，無需手動調整每個單元格格式。這在處理批量數據時尤為實用，尤其是在製作如員工入職表等具有標準化輸入需求的文件時，能幫助您確保數據的一致性並減少出錯機會。</description>
     </item>
     <item>
       <title>Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-ctrlg-filled/</link>
+      <link>https://CodingDog666.github.io/blog/excel-ctrlg-filled/</link>
       <pubDate>Thu, 19 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-ctrlg-filled/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-ctrlg-filled/</guid>
       <description>Excel 教學：一秒填滿取消合併儲存格後的空白格 - 快速解決空白格問題的技巧 在處理大量數據的過程中，許多人遇到過取消合併儲存格後，留下許多空白格的情況。手動一個個填滿這些空白格不僅費時費力，還容易出錯，特別是在數據量大的情況下更是令人頭痛。不過，不用擔心！今天我們將介紹一個高效的解決方法，讓您利用快捷鍵 Ctrl+G，一秒內輕鬆填滿所有空白格，從而大幅提升工作效率。&#xA;Excel 的這個技巧簡單易用，尤其適合需要處理多組數據的用戶。以下是具體操作步驟，無論您是處理小範圍的數據還是大批量的空白格，這個技巧都能幫助您快速完成工作。&#xA;為什麼使用 Ctrl+G 快速填充？ 使用 Ctrl+G 快捷鍵進行空白格填充的好處不僅是速度快，還能保證數據的一致性。當您解除合併儲存格時，通常會留下大量空白儲存格，而這些空格必須快速且準確地填滿，以保持數據表的整潔和準確性。</description>
     </item>
     <item>
       <title>Excel教學：使用Ctrl&#43;G快捷鍵高效移除空白列的方法 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-ctrlg/</link>
+      <link>https://CodingDog666.github.io/blog/excel-ctrlg/</link>
       <pubDate>Wed, 18 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-ctrlg/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-ctrlg/</guid>
       <description>Excel教學：使用Ctrl+G快捷鍵高效移除空白列的方法 在處理 Excel 資料時，我們經常會遇到需要移除空白列的情況。這些空白列可能是由於數據整理中的遺漏，或者是錯誤輸入導致的結果。當面對少量資料時，手動移除是可行的，但如果數據量龐大，一列一列選取刪除就變得非常耗時且效率低下。&#xA;今天，我們要介紹一個高效的方法，使用快捷鍵 Ctrl+G，幫助您迅速選取並移除所有的空白列。這個技巧不僅能夠節省時間，還能讓工作表保持整潔，提高數據處理的效率。&#xA;快速移除空白列的好處 在處理大量數據時，空白列會影響數據的整體性。利用 Ctrl+G 快捷鍵可以快速找到並移除所有空白列，避免手動操作中的繁瑣和錯誤。</description>
     </item>
     <item>
       <title>完整指南：Excel 日期函數使用技巧及範例解析 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-date/</link>
+      <link>https://CodingDog666.github.io/blog/excel-date/</link>
       <pubDate>Tue, 17 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-date/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-date/</guid>
       <description>完整指南：Excel 日期函數使用技巧及範例解析 在日常的 Excel 使用中，日期函數 是處理和分析日期相關數據不可或缺的工具。無論是生成日期、計算日期之間的差距，還是提取年、月、日等信息，這些函數都能幫助您更靈活地管理數據。本文將詳細介紹幾個常用的 Excel 日期函數，並通過範例幫助您掌握這些技巧。&#xA;為什麼使用日期函數？ Excel 的日期函數能夠幫助我們在處理和計算與時間有關的數據時，快速生成所需結果。這些函數特別適合以下場景：</description>
     </item>
     <item>
       <title>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-dget/</link>
+      <link>https://CodingDog666.github.io/blog/excel-dget/</link>
       <pubDate>Mon, 16 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-dget/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-dget/</guid>
       <description>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 在 Excel 中，VLOOKUP 是我們常用來查找數據的強大工具，能夠根據指定的查找值，快速從資料表中找到對應的結果。然而，VLOOKUP 也有其局限性，尤其在查找目標位於非第一列或需要多條件查找時表現不佳。&#xA;為了解決這些問題，Excel 提供了一個更強大的函數：DGET。DGET 不僅克服了 VLOOKUP 的這些限制，還能在查找範圍內的任意列執行數據查找，甚至支持多條件查找。本文將詳細介紹 DGET 函數的使用方法，並通過具體範例展示其優勢。</description>
     </item>
     <item>
       <title>掌握Excel快捷鍵：用F4重複動作與執行絕對參照功能 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-f4/</link>
+      <link>https://CodingDog666.github.io/blog/excel-f4/</link>
       <pubDate>Sun, 15 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-f4/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-f4/</guid>
       <description>掌握Excel快捷鍵：用F4重複動作與執行絕對參照功能 今天，我們要分享 Excel 中非常方便且實用的快捷鍵 F4。這個快捷鍵具備兩大功能：“重複之前動作” 和 “切換公式中的相對參照與絕對參照”。這兩個功能不僅簡單易用，而且能極大地提升你的工作效率，讓你在處理 Excel 任務時事半功倍。&#xA;為什麼F4快捷鍵如此重要？ 在日常的 Excel 操作中，無論是進行數據輸入、格式設置，還是編輯公式，我們經常需要重複某些特定的動作。手動重複這些操作不僅耗時，而且容易出錯。此時，F4快捷鍵 的“重複之前動作”功能就能派上用場。只需按一下 F4 鍵，Excel 便會自動重複你上一次的操作，無需再次手動執行，節省了大量時間和精力。</description>
     </item>
     <item>
       <title>Excel 教學：掌握自動填充功能，快速提升工作效率的技巧與實用指南 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-fastfilled/</link>
+      <link>https://CodingDog666.github.io/blog/excel-fastfilled/</link>
       <pubDate>Sat, 14 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-fastfilled/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-fastfilled/</guid>
       <description>Excel 教學：掌握自動填充功能，快速提升工作效率的技巧與實用指南 在 Excel 中，自動填充 是一個不可或缺的基本功能。無論你是 Excel 初學者還是有經驗的使用者，這項技能都能大大提升你的工作效率。自動填充可以快速複製數字、日期、公式等內容，適用於處理大量數據，避免手動輸入的繁瑣操作與潛在的錯誤。&#xA;為什麼要使用自動填充？ Excel 的 自動填充功能 不僅僅適用於重複數據輸入，它還能夠識別數據的模式並自動生成連續數字或日期，甚至可以快速應用公式到多個儲存格中。這在需要大量數據處理時極為便利，幫助節省時間並減少出錯機率。</description>
     </item>
     <item>
       <title>Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-if/</link>
+      <link>https://CodingDog666.github.io/blog/excel-if/</link>
       <pubDate>Thu, 12 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-if/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-if/</guid>
       <description>Excel 教程：學習如何使用 IF 函數進行條件判斷，提升數據處理能力的實用指南 在現代的辦公環境中，Excel 已經成為處理和分析數據的核心工具之一。其中，IF 函數 是一個不可或缺的邏輯判斷工具。無論你是分析財務報表、處理業務數據，還是執行其他需要進行條件判斷的工作，IF 函數都能根據不同條件返回不同結果，幫助你更精準地管理數據。&#xA;為什麼選擇 IF 函數？ IF 函數 的靈活性和強大功能，讓用戶能夠根據具體需求設置條件，並自動化處理數據。透過 IF 函數，你可以根據判斷條件自動生成報表、數據分析結果，並減少手動操作所帶來的錯誤風險。掌握這個函數，無疑會提升你處理複雜數據的能力。</description>
     </item>
     <item>
       <title>Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-lrm/</link>
+      <link>https://CodingDog666.github.io/blog/excel-lrm/</link>
       <pubDate>Wed, 11 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-lrm/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-lrm/</guid>
       <description>Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用 在 Excel 中，有三個非常實用的函數可以幫助我們進行文字分割，它們分別是 LEFT、RIGHT 和 MID 函數。這些函數可以根據指定的位置和字符數將文本字符串分割成不同的部分，特別適合用於需要從文字中提取特定信息或格式化數據的任務。&#xA;為什麼使用文字分割函數？ LEFT、RIGHT 和 MID 函數能快速、準確地從文本中提取特定字符，尤其在數據處理和清理任務中非常高效。無論是從字串中抽取編號、日期或名字，這些函數都能自動化繁瑣的數據操作，減少手動處理的時間和錯誤機率。</description>
     </item>
     <item>
       <title>Excel中常用運算函數：MIN、MAX 和 AVERAGE 詳細教學 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-max/</link>
+      <link>https://CodingDog666.github.io/blog/excel-max/</link>
       <pubDate>Mon, 09 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-max/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-max/</guid>
       <description>Excel中常用運算函數：MIN、MAX 和 AVERAGE 詳細教學 在日常使用 Excel 進行數據分析時，MIN、MAX 和 AVERAGE 是三個非常實用且常用的函數。這些函數分別用來計算數據範圍中的 最小值、最大值 和 平均值，能夠幫助你快速分析和處理大量數據，並做出更準確的業務決策或報表。</description>
     </item>
     <item>
       <title>Excel乘法運算教學：直接乘法與PRODUCT函數的使用技巧 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-product/</link>
+      <link>https://CodingDog666.github.io/blog/excel-product/</link>
       <pubDate>Sun, 08 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-product/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-product/</guid>
       <description>Excel乘法運算教學：直接乘法與PRODUCT函數的使用技巧 在上一篇文章中，我們介紹了加法 SUM 函數 的基本用法，幫助大家輕鬆處理數據的總和運算。而今天，我們將進一步介紹 Excel 中另一個非常常用且重要的運算：乘法。無論你是要處理財務報表中的總成本計算，還是進行統計分析中的數據乘積運算，Excel 的乘法技巧都能大大提升你的工作效率。&#xA;Excel 中的乘法應用非常廣泛，特別是在處理大量數據時尤為重要。掌握兩種方法——直接乘法 和 PRODUCT 函數，能幫助你在 Excel 中更高效地完成各種乘法運算，無論是簡單的乘積計算還是複雜的數據分析。</description>
     </item>
     <item>
       <title>Excel教學：使用ROW()和COLUMN()自動更新行列的連續序號 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-row_column/</link>
+      <link>https://CodingDog666.github.io/blog/excel-row_column/</link>
       <pubDate>Sat, 07 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-row_column/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-row_column/</guid>
       <description>Excel教學：使用ROW()和COLUMN()函數自動更新刪除行列後的連續序號 是不是曾經遇過好不容易編排好的序號，卻因為刪除了某行列而需要重新手動調整的麻煩呢？&#xA;在日常使用 Excel 中，經常需要增減行列，這時原本編排好的序號往往會不再連貫。舉例來說，當你刪除了 A 列中的某些行後，從 1 到 11 的序號可能會中斷，變得不再連續。這會影響數據的美觀性，甚至影響後續的數據處理。</description>
     </item>
     <item>
       <title>為什麼要學習 Excel？快速提升工作效率的必備技能的 Excel 快捷鍵 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-shortcuts/</link>
+      <link>https://CodingDog666.github.io/blog/excel-shortcuts/</link>
       <pubDate>Fri, 06 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-shortcuts/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-shortcuts/</guid>
       <description>為什麼要學習 Excel？快速提升工作效率的必備技能的 Excel 快捷鍵 在現代職場中，Excel 已經成為不可或缺的工具，無論是數據處理還是報表製作，Excel 都能幫助快速完成任務。而熟練掌握 Excel 快捷鍵 不僅可以提高工作效率，還能避免手動操作的錯誤。對於任何需要高效數據處理的專業人士來說，掌握這些技巧都是必不可少的。</description>
     </item>
     <item>
       <title>Excel加法運算教學：使用 SUM 函數及 Alt&#43; 快捷鍵 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-sum/</link>
+      <link>https://CodingDog666.github.io/blog/excel-sum/</link>
       <pubDate>Thu, 05 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-sum/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-sum/</guid>
       <description>Excel 加法運算教學：使用 SUM 函數及 Alt+ 快捷鍵 Excel 是一款廣泛應用於數據處理和分析的強大工具，而加法運算則是其中最基本且常用的數學運算之一。通過掌握 Excel 中的加法運算技巧，您可以更加高效地處理和分析數據，這對於日常工作中的各種任務至關重要。</description>
     </item>
     <item>
       <title>提升Excel效率：掌握SUMIF與SUMIFS函數的使用技巧 - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-sumif/</link>
+      <link>https://CodingDog666.github.io/blog/excel-sumif/</link>
       <pubDate>Wed, 04 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-sumif/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-sumif/</guid>
       <description>提升Excel效率：掌握SUMIF與SUMIFS函數的使用技巧 在 Excel 中，除了常見的 SUM 函數 外，SUMIF 和 SUMIFS 是兩個進階且非常實用的函數，特別適合在依據條件進行數字求和時使用。這兩個函數能夠根據條件篩選並匯總數據，讓你在處理數據時更加高效。</description>
     </item>
     <item>
       <title>Excel教學：快速批量建立員工資料夾，一分鐘內完成的方法！ - CordingDog</title>
-      <link>http://localhost:1313/blog/excel-folder/</link>
+      <link>https://CodingDog666.github.io/blog/excel-folder/</link>
       <pubDate>Sat, 01 Jun 2024 18:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/excel-folder/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-folder/</guid>
       <description>Excel教學：快速批量建立員工資料夾，一分鐘內完成的方法！ 在工作中，我們經常會遇到需要為每位員工建立獨立資料夾的情況，這些資料夾用來存放員工的個人檔案、績效報告或培訓記錄。如果員工人數不多，手動逐一建立資料夾是可行的，但面對數十或數百名員工時，這樣的操作方式顯得效率低下且容易出錯。&#xA;今天，我們要介紹一個簡單快速的方法，只需使用 Excel 和 批處理文件（BAT檔案），便能在一分鐘內批量建立大量資料夾。這樣可以有效節省時間，並確保每個資料夾命名一致，避免手動操作的錯誤。快來學習如何操作吧！&#xA;為什麼選擇批量建立資料夾？ 當處理大量員工資料時，手動建立資料夾耗時且容易出錯。通過將員工姓名輸入到 Excel 中，並生成 BAT 批處理文件，可以自動化這個過程。這不僅大大提升效率，還能確保資料夾的準確性與一致性，適合任何數量的資料夾創建需求。</description>
     </item>
   </channel>
