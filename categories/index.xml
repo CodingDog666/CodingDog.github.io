@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on CodingDog</title>
-    <link>https://CodingDog666.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Sep 2024 09:07:47 +0800</lastBuildDate>
-    <atom:link href="https://CodingDog666.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VBA巨集</title>
-      <link>https://CodingDog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/</link>
+      <link>http://localhost:1313/categories/vba%E5%B7%A8%E9%9B%86/</link>
       <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>https://CodingDog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/</guid>
+      <guid>http://localhost:1313/categories/vba%E5%B7%A8%E9%9B%86/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>https://CodingDog666.github.io/categories/ai/</link>
+      <link>http://localhost:1313/categories/ai/</link>
       <pubDate>Sat, 21 Sep 2024 10:07:47 +0800</pubDate>
-      <guid>https://CodingDog666.github.io/categories/ai/</guid>
+      <guid>http://localhost:1313/categories/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Excel</title>
-      <link>https://CodingDog666.github.io/categories/excel/</link>
+      <link>http://localhost:1313/categories/excel/</link>
       <pubDate>Sat, 21 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>https://CodingDog666.github.io/categories/excel/</guid>
+      <guid>http://localhost:1313/categories/excel/</guid>
       <description></description>
     </item>
   </channel>
