@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VLOOKUP on CordingDog</title>
-    <link>https://CordingDog.github.io/tags/vlookup/</link>
-    <description>Recent content in VLOOKUP on CordingDog</description>
+    <title>VLOOKUP on CodingDog</title>
+    <link>https://CodingDog666.github.io/tags/vlookup/</link>
+    <description>Recent content in VLOOKUP on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Sep 2024 09:07:47 +0800</lastBuildDate>
-    <atom:link href="https://CordingDog.github.io/tags/vlookup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://CodingDog666.github.io/tags/vlookup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 - CordingDog</title>
-      <link>https://CordingDog.github.io/blog/excel-vlookup/</link>
+      <link>https://CodingDog666.github.io/blog/excel-vlookup/</link>
       <pubDate>Sat, 21 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>https://CordingDog.github.io/blog/excel-vlookup/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-vlookup/</guid>
       <description>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 VLOOKUP 函數 是 Excel 中用來進行垂直查找的強大工具，無論是處理大規模數據還是快速定位資料，VLOOKUP 都能提升數據處理效率。本文將從 VLOOKUP 函數的基礎用法 開始，逐步講解如何在各種情況下應用這個函數，並進一步介紹如何使用 數組公式 來擴展 VLOOKUP 的應用。</description>
     </item>
     <item>
       <title>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 - CordingDog</title>
-      <link>https://CordingDog.github.io/blog/excel-dget/</link>
+      <link>https://CodingDog666.github.io/blog/excel-dget/</link>
       <pubDate>Mon, 16 Sep 2024 18:07:47 +0800</pubDate>
-      <guid>https://CordingDog.github.io/blog/excel-dget/</guid>
+      <guid>https://CodingDog666.github.io/blog/excel-dget/</guid>
       <description>Excel教學：DGET函數—超越VLOOKUP的強大數據查找功能 在 Excel 中，VLOOKUP 是我們常用來查找數據的強大工具，能夠根據指定的查找值，快速從資料表中找到對應的結果。然而，VLOOKUP 也有其局限性，尤其在查找目標位於非第一列或需要多條件查找時表現不佳。&#xA;為了解決這些問題，Excel 提供了一個更強大的函數：DGET。DGET 不僅克服了 VLOOKUP 的這些限制，還能在查找範圍內的任意列執行數據查找，甚至支持多條件查找。本文將詳細介紹 DGET 函數的使用方法，並通過具體範例展示其優勢。</description>
     </item>
   </channel>
