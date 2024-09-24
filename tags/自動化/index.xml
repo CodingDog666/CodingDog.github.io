@@ -6,8 +6,15 @@
     <description>Recent content in 自動化 on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Sep 2024 09:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2024 05:00:00 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</title>
+      <link>https://CodingDog666.github.io/blog/vba-automation/</link>
+      <pubDate>Wed, 25 Sep 2024 05:00:00 +0800</pubDate>
+      <guid>https://CodingDog666.github.io/blog/vba-automation/</guid>
+      <description>VBA 的語法與基本操作：掌握程式設計的核心技能 VBA（Visual Basic for Applications）是一個強大的工具，可以自動化許多 Excel 的日常工作，並提升工作效率。本篇文章將帶你深入了解 VBA 的基本語法與操作，從變數、資料型別，到條件語句與循環控制，幫助你撰寫簡單且實用的程式。</description>
+    </item>
     <item>
       <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-introduction/</link>
