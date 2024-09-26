@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+    
+
+    <title>VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="探討 VBA 事件觸發與如何撰寫自訂函數，進一步提高 VBA 應用的靈活性。了解事件驅動程式如何運作，並學習如何撰寫自訂函數以提升工作效率。">
+    <meta name="author" content="CordingDog">
+  
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+
+  
+  <meta name="generator" content="Hugo 0.123.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://CodingDog666.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  
+  
+  <link rel="shortcut icon" href="https://CodingDog666.github.io/images/favicon.ico" type="image/x-icon">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-45JFQNBC37"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-45JFQNBC37');
+</script>
+
+
+<meta name="p:domain_verify" content="6da21b1185e24fb1febc5b980883e536"/>
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
+          src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
+            src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CodingDog666.github.io/">所有文章</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CodingDog666.github.io/categories/excel/">Excel</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CodingDog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">VBA巨集</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CodingDog666.github.io/categories/test/">Python</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://CodingDog666.github.io/categories/ai/">AI</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://CodingDog666.github.io//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/vba%e5%b7%a8%e9%9b%86"
+          class="text-primary">Vba巨集</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>27 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="vba-中的事件與自訂函數掌握事件驅動程式和撰寫自訂函數">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數</h1>
+<img src="../../images/VBA/vba_events_and_custom_functions.png" alt="VBA 中的事件與自訂函數" loading="lazy">
+
+<p>在 VBA 中，<strong>事件驅動程式</strong>和<strong>自訂函數</strong>是強大且靈活的工具，能大幅提升 Excel 自動化的應用範圍。這篇文章將深入介紹如何使用事件與自訂函數來處理資料變更和增加 Excel 的功能。</p>
+<h2 id="什麼是事件驅動程式">什麼是事件驅動程式？</h2>
+<p>事件驅動程式是當 Excel 發生某種<strong>事件</strong>（如打開工作簿、變更儲存格內容）時自動觸發的程式碼。這類程式碼能在特定情況下自動執行，減少人工操作，提升自動化效率。</p>
+<h3 id="常見事件">常見事件</h3>
+<p>在 Excel 中，以下是常見的事件：</p>
+<ul>
+<li><strong>Workbook_Open</strong>：當工作簿被打開時觸發。</li>
+<li><strong>Workbook_BeforeSave</strong>：在儲存工作簿之前觸發。</li>
+<li><strong>Worksheet_Change</strong>：當工作表中的某個儲存格內容變更時觸發。</li>
+</ul>
+<h3 id="事件驅動程式範例自動處理資料變更">事件驅動程式範例：自動處理資料變更</h3>
+<p>以下是一個簡單的事件驅動程式範例。當儲存格變更時，該程式會自動將變更紀錄至特定的工作表中。</p>
+<pre tabindex="0"><code>Private Sub Worksheet_Change(ByVal Target As Range)
+    If Not Intersect(Target, Me.Range(&#34;A1:A10&#34;)) Is Nothing Then
+        Sheets(&#34;Log&#34;).Cells(Rows.Count, 1).End(xlUp).Offset(1, 0).Value = &#34;變更於 &#34; &amp; Now
+    End If
+End Sub
+</code></pre><p>這個 VBA 函數 Private Sub Worksheet_Change(ByVal Target As Range) 是一個事件觸發程序，它在當工作表中某個範圍的資料被更改時自動執行。</p>
+<ul>
+<li>事件觸發: 當工作表中的範圍 A1:A10 的任意儲存格值發生變動時，程式會啟動。</li>
+<li>Intersect 函數用來檢查變更的儲存格是否在 A1:A10 範圍內。</li>
+<li>如果有變動，程式會將「變更時間」記錄到名為 Log 的工作表，並在第一列的空白處添加一行記錄。</li>
+</ul>
+<h2 id="如何撰寫自訂函數">如何撰寫自訂函數</h2>
+<p>除了事件觸發外，自訂函數（UDF, User Defined Function）能擴展 Excel 內建函數的功能，滿足更複雜的數據處理需求。自訂函數是 VBA 另一個強大的功能，它讓你能擴展 Excel 的計算能力，撰寫自定義的公式。與內建的函數不同，自訂函數可以根據具體需求設計並應用於工作表中，增加靈活性和功能。</p>
+<h5 id="自訂函數範例計算折扣價格">自訂函數範例：計算折扣價格</h5>
+<p>以下範例是一個簡單的自訂函數，用來計算產品的折扣價格：</p>
+<pre tabindex="0"><code>Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double
+    計算折扣價格 = 原價 * (1 - 折扣)
+End Function
+</code></pre><ul>
+<li>Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double: 定義了這個函數。<strong>原價</strong> 和 <strong>折扣</strong> 是兩個輸入參數，型別為 Double（雙精度浮點數），用來表示原始價格和折扣百分比。</li>
+<li>計算折扣價格 = 原價 * (1 - 折扣): 這行代碼計算並返回折扣後的價格。假設折扣為 0.2，表示 20% 折扣，則會計算 原價 * 0.8。</li>
+<li>End Function: 函數結束。</li>
+<li>範例：如果輸入原價 100，折扣 0.2，結果會是 80。</li>
+</ul>
+<hr>
+<h2 id="自訂函數與內建函數的差異">自訂函數與內建函數的差異</h2>
+<p>內建函數如 SUM、AVERAGE 等，雖然功能豐富，但有時並不能完全滿足業務需求。撰寫自訂函數讓你能根據實際情況創建功能，更靈活地滿足各種特定需求。此外，自訂函數可以在 Excel 中與內建函數一樣使用，無需額外的操作。</p>
+<hr>
+<h2 id="使用-vba-操作工作表與事件的好處">使用 VBA 操作工作表與事件的好處</h2>
+<ol>
+<li><em><strong>自動化重複性操作</strong></em>：利用事件驅動程式，你可以自動處理如數據輸入、公式更新、表格整理等工作，極大地提高效率。</li>
+<li><em><strong>精確控制</strong></em>：自訂函數與事件讓你對 Excel 中的操作有更好的控制權，能根據具體業務邏輯定制各類操作，滿足專業需求。</li>
+<li><em><strong>動態響應用戶操作</strong></em>：事件機制讓你能根據使用者的具體行為，動態調整工作表邏輯，讓工作流程更加順暢和自動化。</li>
+</ol>
+<h2 id="總結">總結</h2>
+<p>VBA 中的事件驅動程式和自訂函數是提升 Excel 自動化和靈活性的關鍵。透過事件響應使用者的操作，再結合自訂函數處理特殊的數據邏輯，能幫助你在 Excel 中構建更高效的工作流。學會如何掌握這些工具，將讓你的工作表變得更智能、更高效。</p>
+<hr>
+<h3 id="書籍推薦從入門到進階的學習資源">書籍推薦：從入門到進階的學習資源</h3>
+<p>如果你更喜歡透過閱讀來學習 VBA，以下是一本經典的書籍推薦，適合從入門到進階使用者。</p>
+<ul>
+<li><em><strong>最新Excel VBA基礎必修課</strong></em>。這本書提供了全面的 Excel VBA 基礎培訓，包括程式設計、問題解決以及實際範例，非常適合初學者開始學習 VBA。</li>
+</ul>
+<p><strong><a href="https://tinyurl.com/297nlj7u">點我前往金石堂 《最新Excel VBA基礎必修課》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/9pLjTttuPy">點我前往蝦皮 《最新Excel VBA基礎必修課》</a></strong></p>
+<hr>
+<h3 id="線上課程推薦隨時隨地學習">線上課程推薦：隨時隨地學習</h3>
+<p>線上課程的彈性學習方式對於繁忙的工作者來說非常實用。以下兩個平台提供了豐富的 VBA 和 Excel 課程，無論你是初學者還是進階使用者，都能找到適合的課程。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/25uvvrss">玩轉數據與資料：Excel VBA 入門教學</a></strong>：這門課程專為初學者設計，能幫助您快速上手 VBA 的基本操作與數據處理。從 Excel VBA 入門的環境設定開始，透過實作範例練習，帶領學生寫出想要的程式碼，學習迴圈雨判斷式的多結構混合應用，來進行數據與資料的處理分析。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/28lmlvzr">Udemy 線上課程－VBA</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 VBA 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>26 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_syntax_basics.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>25 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://CodingDog666.github.io/"><img src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+      </div>
+      
+      
+<script>
+  var indexURL = "https://CodingDog666.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://CodingDog666.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/search/mark.js"></script>
+
+<script src="https://CodingDog666.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://CodingDog666.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+
+
+
+<style>
+   
+  body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  </style>
+  
+  <script>
+  
+  document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.addEventListener('copy', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  document.addEventListener('cut', function(e) {
+      e.preventDefault();
+  }, false);
+  
+  
+  document.onkeydown = function(e) {
+      if (e.ctrlKey && (e.key === 'u' || e.key === 'c' || e.key === 'x' || e.key === 's' || e.key === 'a')) {
+          e.preventDefault();
+          return false;
+      }
+  };
+  </script>
+
+</body>
+
+          
+  
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/vba%e5%b7%a8%e9%9b%86"
+          class="text-primary">Vba巨集</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>27 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="vba-中的事件與自訂函數掌握事件驅動程式和撰寫自訂函數">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數</h1>
+<img src="../../images/VBA/vba_events_and_custom_functions.png" alt="VBA 中的事件與自訂函數" loading="lazy">
+
+<p>在 VBA 中，<strong>事件驅動程式</strong>和<strong>自訂函數</strong>是強大且靈活的工具，能大幅提升 Excel 自動化的應用範圍。這篇文章將深入介紹如何使用事件與自訂函數來處理資料變更和增加 Excel 的功能。</p>
+<h2 id="什麼是事件驅動程式">什麼是事件驅動程式？</h2>
+<p>事件驅動程式是當 Excel 發生某種<strong>事件</strong>（如打開工作簿、變更儲存格內容）時自動觸發的程式碼。這類程式碼能在特定情況下自動執行，減少人工操作，提升自動化效率。</p>
+<h3 id="常見事件">常見事件</h3>
+<p>在 Excel 中，以下是常見的事件：</p>
+<ul>
+<li><strong>Workbook_Open</strong>：當工作簿被打開時觸發。</li>
+<li><strong>Workbook_BeforeSave</strong>：在儲存工作簿之前觸發。</li>
+<li><strong>Worksheet_Change</strong>：當工作表中的某個儲存格內容變更時觸發。</li>
+</ul>
+<h3 id="事件驅動程式範例自動處理資料變更">事件驅動程式範例：自動處理資料變更</h3>
+<p>以下是一個簡單的事件驅動程式範例。當儲存格變更時，該程式會自動將變更紀錄至特定的工作表中。</p>
+<pre tabindex="0"><code>Private Sub Worksheet_Change(ByVal Target As Range)
+    If Not Intersect(Target, Me.Range(&#34;A1:A10&#34;)) Is Nothing Then
+        Sheets(&#34;Log&#34;).Cells(Rows.Count, 1).End(xlUp).Offset(1, 0).Value = &#34;變更於 &#34; &amp; Now
+    End If
+End Sub
+</code></pre><p>這個 VBA 函數 Private Sub Worksheet_Change(ByVal Target As Range) 是一個事件觸發程序，它在當工作表中某個範圍的資料被更改時自動執行。</p>
+<ul>
+<li>事件觸發: 當工作表中的範圍 A1:A10 的任意儲存格值發生變動時，程式會啟動。</li>
+<li>Intersect 函數用來檢查變更的儲存格是否在 A1:A10 範圍內。</li>
+<li>如果有變動，程式會將「變更時間」記錄到名為 Log 的工作表，並在第一列的空白處添加一行記錄。</li>
+</ul>
+<h2 id="如何撰寫自訂函數">如何撰寫自訂函數</h2>
+<p>除了事件觸發外，自訂函數（UDF, User Defined Function）能擴展 Excel 內建函數的功能，滿足更複雜的數據處理需求。自訂函數是 VBA 另一個強大的功能，它讓你能擴展 Excel 的計算能力，撰寫自定義的公式。與內建的函數不同，自訂函數可以根據具體需求設計並應用於工作表中，增加靈活性和功能。</p>
+<h5 id="自訂函數範例計算折扣價格">自訂函數範例：計算折扣價格</h5>
+<p>以下範例是一個簡單的自訂函數，用來計算產品的折扣價格：</p>
+<pre tabindex="0"><code>Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double
+    計算折扣價格 = 原價 * (1 - 折扣)
+End Function
+</code></pre><ul>
+<li>Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double: 定義了這個函數。<strong>原價</strong> 和 <strong>折扣</strong> 是兩個輸入參數，型別為 Double（雙精度浮點數），用來表示原始價格和折扣百分比。</li>
+<li>計算折扣價格 = 原價 * (1 - 折扣): 這行代碼計算並返回折扣後的價格。假設折扣為 0.2，表示 20% 折扣，則會計算 原價 * 0.8。</li>
+<li>End Function: 函數結束。</li>
+<li>範例：如果輸入原價 100，折扣 0.2，結果會是 80。</li>
+</ul>
+<hr>
+<h2 id="自訂函數與內建函數的差異">自訂函數與內建函數的差異</h2>
+<p>內建函數如 SUM、AVERAGE 等，雖然功能豐富，但有時並不能完全滿足業務需求。撰寫自訂函數讓你能根據實際情況創建功能，更靈活地滿足各種特定需求。此外，自訂函數可以在 Excel 中與內建函數一樣使用，無需額外的操作。</p>
+<hr>
+<h2 id="使用-vba-操作工作表與事件的好處">使用 VBA 操作工作表與事件的好處</h2>
+<ol>
+<li><em><strong>自動化重複性操作</strong></em>：利用事件驅動程式，你可以自動處理如數據輸入、公式更新、表格整理等工作，極大地提高效率。</li>
+<li><em><strong>精確控制</strong></em>：自訂函數與事件讓你對 Excel 中的操作有更好的控制權，能根據具體業務邏輯定制各類操作，滿足專業需求。</li>
+<li><em><strong>動態響應用戶操作</strong></em>：事件機制讓你能根據使用者的具體行為，動態調整工作表邏輯，讓工作流程更加順暢和自動化。</li>
+</ol>
+<h2 id="總結">總結</h2>
+<p>VBA 中的事件驅動程式和自訂函數是提升 Excel 自動化和靈活性的關鍵。透過事件響應使用者的操作，再結合自訂函數處理特殊的數據邏輯，能幫助你在 Excel 中構建更高效的工作流。學會如何掌握這些工具，將讓你的工作表變得更智能、更高效。</p>
+<hr>
+<h3 id="書籍推薦從入門到進階的學習資源">書籍推薦：從入門到進階的學習資源</h3>
+<p>如果你更喜歡透過閱讀來學習 VBA，以下是一本經典的書籍推薦，適合從入門到進階使用者。</p>
+<ul>
+<li><em><strong>最新Excel VBA基礎必修課</strong></em>。這本書提供了全面的 Excel VBA 基礎培訓，包括程式設計、問題解決以及實際範例，非常適合初學者開始學習 VBA。</li>
+</ul>
+<p><strong><a href="https://tinyurl.com/297nlj7u">點我前往金石堂 《最新Excel VBA基礎必修課》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/9pLjTttuPy">點我前往蝦皮 《最新Excel VBA基礎必修課》</a></strong></p>
+<hr>
+<h3 id="線上課程推薦隨時隨地學習">線上課程推薦：隨時隨地學習</h3>
+<p>線上課程的彈性學習方式對於繁忙的工作者來說非常實用。以下兩個平台提供了豐富的 VBA 和 Excel 課程，無論你是初學者還是進階使用者，都能找到適合的課程。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/25uvvrss">玩轉數據與資料：Excel VBA 入門教學</a></strong>：這門課程專為初學者設計，能幫助您快速上手 VBA 的基本操作與數據處理。從 Excel VBA 入門的環境設定開始，透過實作範例練習，帶領學生寫出想要的程式碼，學習迴圈雨判斷式的多結構混合應用，來進行數據與資料的處理分析。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/28lmlvzr">Udemy 線上課程－VBA</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 VBA 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>26 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_syntax_basics.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>25 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+  
+  
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           
+           const links = document.querySelectorAll('a[href^="http"]');
+           
+           links.forEach(function(link) {
+             if (link.hostname !== window.location.hostname) {
+               link.setAttribute("target", "_blank");
+               link.setAttribute("rel", "noopener noreferrer");
+             }
+           });
+         });
+       </script>
+       
+</html>

@@ -6,15 +6,8 @@
     <description>Recent content in Excel on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2024 05:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2024 09:07:47 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/categories/excel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</title>
-      <link>https://CodingDog666.github.io/blog/vba-object/</link>
-      <pubDate>Thu, 26 Sep 2024 05:07:47 +0800</pubDate>
-      <guid>https://CodingDog666.github.io/blog/vba-object/</guid>
-      <description>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 在 VBA (Visual Basic for Applications) 中，物件模型是用來與 Excel 的各個組件進行互動的關鍵概念。透過了解物件模型的架構，我們可以輕鬆自動化任務，管理工作簿、工作表、儲存格等。</description>
-    </item>
     <item>
       <title>Excel VLOOKUP 函數詳細教學：從基礎到進階應用 - CordingDog</title>
       <link>https://CodingDog666.github.io/blog/excel-vlookup/</link>

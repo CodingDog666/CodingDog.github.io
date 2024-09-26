@@ -290,7 +290,8 @@
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
 
         </div>
         
@@ -306,6 +307,25 @@
     <div class="row">
 
             
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
       
       <div class="col-lg-4 small-post-border">
         <article class="media">
@@ -341,25 +361,6 @@
             </div>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_intro%E5%B0%81%E9%9D%A2.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>22 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="h5 d-block mb-3">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -491,4 +492,235 @@
   </script>
 
 </body>
+
+          
+  
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>11 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel中的文字分割技巧leftright和mid函數的使用">Excel中的文字分割技巧：LEFT、RIGHT和MID函數的使用</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/LeftRight%e5%92%8cMid.png" alt="Excel 文字分割技巧：LEFT、RIGHT和MID函數" loading="lazy">
+
+<p>在 <strong>Excel</strong> 中，有三個非常實用的函數可以幫助我們進行文字分割，它們分別是 <strong>LEFT</strong>、<strong>RIGHT</strong> 和 <strong>MID</strong> 函數。這些函數可以根據指定的位置和字符數將文本字符串分割成不同的部分，特別適合用於需要從文字中提取特定信息或格式化數據的任務。</p>
+<hr>
+<h2 id="為什麼使用文字分割函數">為什麼使用文字分割函數？</h2>
+<p><strong>LEFT</strong>、<strong>RIGHT</strong> 和 <strong>MID</strong> 函數能快速、準確地從文本中提取特定字符，尤其在數據處理和清理任務中非常高效。無論是從字串中抽取編號、日期或名字，這些函數都能自動化繁瑣的數據操作，減少手動處理的時間和錯誤機率。</p>
+<hr>
+<h2 id="left-函數">LEFT 函數</h2>
+<p><strong>LEFT</strong> 函數從文字的左側提取指定數量的字符。語法如下：</p>
+<p><code>=LEFT(文字, 字符數)</code></p>
+<ul>
+<li><em><strong>文字</strong></em>：要進行分割的字串。</li>
+<li><em><strong>字符數</strong></em>：要提取的字符數量。</li>
+</ul>
+<h3 id="示例">示例：</h3>
+<p>假設我們要從字符串 &ldquo;Excel is a great tool&rdquo; 中提取前 5 個字符，公式如下：</p>
+<p><code>=LEFT(&quot;Excel is a great tool&quot;, 5)</code></p>
+<p>此公式將返回 &ldquo;Excel&rdquo;。</p>
+<hr>
+<h2 id="right-函數">RIGHT 函數</h2>
+<p>RIGHT 函數從文字的右側提取指定數量的字符。語法如下：</p>
+<p><code>=RIGHT(文字, 字符數)</code></p>
+<ul>
+<li><em><strong>文字</strong></em>：要進行分割的字串。</li>
+<li><em><strong>字符數</strong></em>：要提取的字符數量。</li>
+</ul>
+<h3 id="示例-1">示例：</h3>
+<p>如果我們要從字符串 &ldquo;Excel is a great tool&rdquo; 中提取最後 4 個字符，公式如下：</p>
+<p><code>=RIGHT(&quot;Excel is a great tool&quot;, 4)</code></p>
+<p>此公式將返回 &ldquo;tool&rdquo;。</p>
+<hr>
+<h3 id="mid-函數">MID 函數</h3>
+<p>MID 函數用於從文字的任意位置開始，提取指定數量的字符。語法如下：</p>
+<p><code>=MID(文字, 起始位置, 字符數)</code></p>
+<ul>
+<li><em><strong>文字</strong></em>：要分割的文本字符串。</li>
+<li><em><strong>起始位置</strong></em>：提取字符的起始位置（從左側開始計算）。</li>
+<li><em><strong>字符數</strong></em>：要提取的字符數量。</li>
+</ul>
+<h3 id="示例-2">示例：</h3>
+<p>如果我們想從字符串 &ldquo;Excel is a great tool&rdquo; 中提取從第 7 個字符開始的 5 個字符，公式如下：</p>
+<p><code>=MID(&quot;Excel is a great tool&quot;, 7, 5)</code></p>
+<p>此公式將返回 &ldquo;is a &ldquo;。</p>
+<hr>
+<h2 id="剖析文本功能另一個分割文本的強大工具">剖析文本功能：另一個分割文本的強大工具</h2>
+<p>除了函數，Excel 還提供了「剖析文本」功能，它可以根據特定的分隔符將字串分割成多個部分。這對於處理帶有特定格式（如逗號、空格或其他分隔符）的數據特別有用。</p>
+<p>剖析文本的操作步驟：</p>
+<ol>
+<li><strong>選擇需要分割的數據列。</strong></li>
+<li><strong>在功能表中選擇 數據 -&gt; 剖析文本。</strong></li>
+<li><strong>選擇分割的依據（例如，按照逗號、空格等分割）。</strong></li>
+<li><strong>按提示進行操作，Excel 會自動將文字分割至不同的儲存格中。</strong></li>
+</ol>
+<hr>
+<h2 id="小結">小結</h2>
+<p>通過 LEFT、RIGHT 和 MID 函數，配合 剖析文本 功能，你可以輕鬆應對文字分割和數據處理的任務。這些工具不僅能夠節省大量的時間，還能幫助你提高數據分析的效率和準確性。趕快試試這些技巧，讓你的 Excel 使用變得更加輕鬆高效！</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/5ppaiZQT93">點我前往蝦皮 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/2fsYwlh099">點我前往蝦皮 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>26 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_syntax_basics.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>25 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+  
+  
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           
+           const links = document.querySelectorAll('a[href^="http"]');
+           
+           links.forEach(function(link) {
+             if (link.hostname !== window.location.hostname) {
+               link.setAttribute("target", "_blank");
+               link.setAttribute("rel", "noopener noreferrer");
+             }
+           });
+         });
+       </script>
+       
 </html>

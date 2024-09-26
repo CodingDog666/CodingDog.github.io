@@ -6,8 +6,15 @@
     <description>Recent content in VBA on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2024 05:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Sep 2024 05:00:00 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/tags/vba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</title>
+      <link>https://CodingDog666.github.io/blog/vba-events/</link>
+      <pubDate>Fri, 27 Sep 2024 05:00:00 +0800</pubDate>
+      <guid>https://CodingDog666.github.io/blog/vba-events/</guid>
+      <description>VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 在 VBA 中，事件驅動程式和自訂函數是強大且靈活的工具，能大幅提升 Excel 自動化的應用範圍。這篇文章將深入介紹如何使用事件與自訂函數來處理資料變更和增加 Excel 的功能。&#xA;什麼是事件驅動程式？ 事件驅動程式是當 Excel 發生某種事件（如打開工作簿、變更儲存格內容）時自動觸發的程式碼。這類程式碼能在特定情況下自動執行，減少人工操作，提升自動化效率。</description>
+    </item>
     <item>
       <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-object/</link>

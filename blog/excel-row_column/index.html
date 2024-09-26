@@ -277,7 +277,8 @@ COLUMN() 函數 用於生成列的連續序號。當你需要對列進行自動�
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
 
         </div>
         
@@ -293,6 +294,25 @@ COLUMN() 函數 用於生成列的連續序號。當你需要對列進行自動�
     <div class="row">
 
             
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
       
       <div class="col-lg-4 small-post-border">
         <article class="media">
@@ -328,25 +348,6 @@ COLUMN() 函數 用於生成列的連續序號。當你需要對列進行自動�
             </div>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_intro%E5%B0%81%E9%9D%A2.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>22 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="h5 d-block mb-3">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -478,4 +479,222 @@ COLUMN() 函數 用於生成列的連續序號。當你需要對列進行自動�
   </script>
 
 </body>
+
+          
+  
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/excel"
+          class="text-primary">Excel</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>07 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="excel教學使用row和column函數自動更新刪除行列後的連續序號">Excel教學：使用ROW()和COLUMN()函數自動更新刪除行列後的連續序號</h1>
+<img src="../../images/excel%e6%96%87%e7%ab%a0%e5%b0%81%e9%9d%a2/Row%e5%92%8cColumn.png" alt="如何使用ROW()和COLUMN()自動更新Excel行列序號" loading="lazy">
+
+<p>是不是曾經遇過好不容易編排好的序號，卻因為刪除了某行列而需要重新手動調整的麻煩呢？</p>
+<p>在日常使用 <strong>Excel</strong> 中，經常需要增減行列，這時原本編排好的序號往往會不再連貫。舉例來說，當你刪除了 A 列中的某些行後，從 1 到 11 的序號可能會中斷，變得不再連續。這會影響數據的美觀性，甚至影響後續的數據處理。</p>
+<p>手動重新編排這些序號不僅繁瑣，還容易出錯。為了解決這個問題，我們可以使用 <strong>ROW()</strong> 和 <strong>COLUMN()</strong> 函數，來自動更新行列序號。這樣一來，即使你刪除行列，序號也會自動保持連續，節省了大量時間和精力。</p>
+<hr>
+<h2 id="使用-row-函數自動更新行序號">使用 ROW() 函數自動更新行序號</h2>
+<p><strong>ROW() 函數</strong> 可以根據儲存格所在的行自動生成數字，特別適合用來處理行的連續序號問題。以下是具體步驟：</p>
+<h3 id="操作步驟">操作步驟：</h3>
+<ol>
+<li><strong>在 A 列中使用 ROW() 函數</strong>：假設你希望 A 列的序號從第二行開始編排，請在 A2 儲存格輸入公式：</li>
+</ol>
+<p><code> =ROW()-1</code></p>
+<img src="../../images/excel/ROW3.png" alt="使用ROW函數生成連續行序號" loading="lazy">
+
+<p>這樣做可以扣除標題行，讓序號從 1 開始。</p>
+<ol start="2">
+<li><strong>自動填充</strong>：使用 Excel 的自動填充功能，將公式應用到整個 A 列。只需將滑鼠移到 A2 儲存格右下角的小方塊，雙擊或拖動即可完成序號的自動生成。</li>
+</ol>
+<img src="../../images/excel/ROW4.png" alt="使用ROW函數生成連續行序號" loading="lazy">
+
+<ol start="3">
+<li><strong>刪除行並檢查結果</strong>：當你刪除了某些行時，A 列的序號會自動更新，保持連續性。</li>
+</ol>
+<p><img src="../../images/excel/ROW5.png" alt="使用ROW函數生成連續行序號" loading="lazy">
+
+<img src="../../images/excel/ROW6.png" alt="使用ROW函數生成連續行序號" loading="lazy">
+</p>
+<h2 id="使用-column-函數自動更新列序號">使用 COLUMN() 函數自動更新列序號</h2>
+<p>同樣地，使用 COLUMN() 函數 處理列的序號時，即便刪除了某些列，序號仍會保持正確和連續。
+COLUMN() 函數 用於生成列的連續序號。當你需要對列進行自動編號時，這個函數能夠動態生成對應的列號。</p>
+<h3 id="操作步驟-1">操作步驟：</h3>
+<ol>
+<li><em><strong>在 B 列中使用 COLUMN() 函數</strong></em>：如果需要自動生成列的序號，可以在 B2 儲存格中輸入公式：</li>
+</ol>
+<p><code>=COLUMN()-1</code></p>
+<p>這樣，B 列的列號將會自動從 1 開始。</p>
+<ol start="2">
+<li><em><strong>自動更新列序號</strong></em>：當你刪除某些列時，COLUMN() 函數會自動更新序號，無需手動修改。</li>
+</ol>
+<hr>
+<h2 id="小結">小結</h2>
+<p>使用 ROW() 和 COLUMN() 函數，不僅可以在 Excel 中自動生成連續的行列序號，還可以在刪除行列後自動更新，節省了手動編輯的時間。無論是處理大數據還是簡單的表格，這兩個函數都能有效提升你的工作效率。希望這些技巧能幫助你在 Excel 中更高效地進行數據管理！</p>
+<hr>
+<h2 id="為什麼需要學習-excelai-工具無法完全取代-excel-的理由">為什麼需要學習 Excel？AI 工具無法完全取代 Excel 的理由</h2>
+<p>學習 Excel 是每位現代職場人士必備的技能之一。<strong>Excel</strong> 不僅可以提升數據處理、分析能力，還能讓我們在工作中大幅提高效率。透過掌握 Excel 公式、圖表、VBA 巨集等技巧，許多重複性工作都可以被自動化處理，這能大大減少人為錯誤，並加快工作進度。</p>
+<p><strong>Excel</strong> 尤其在以下領域中發揮著關鍵作用：</p>
+<ol>
+<li><strong>財務與會計</strong>：Excel 的數據處理功能讓它成為財務人員的得力助手，無論是生成財務報表、進行預算編制，還是管理應收應付款。</li>
+<li><strong>數據分析與商業決策</strong>：Excel 可用來進行高效的數據分析，通過樞紐分析和圖表快速提取數據背後的洞見，幫助管理層作出明智的商業決策。</li>
+<li><strong>專案管理與行政工作</strong>：Excel 的自訂格式和範本功能可以用來管理專案進度，進行工作安排，讓行政工作者更輕鬆地跟進日常任務。</li>
+</ol>
+<h4 id="ai-工具的崛起與局限性">AI 工具的崛起與局限性</h4>
+<p>隨著 <strong>AI 工具</strong>（如 ChatGPT）的崛起，您可能會想：還需要學習 Excel 嗎？事實上，<strong>AI 工具</strong>確實能夠幫助生成並解釋 Excel 中的公式，這對解決一些簡單的數據處理問題非常有幫助。例如：</p>
+<ul>
+<li><strong>免費版的 ChatGPT 3.5</strong> 可以生成基本公式，如 <code>SUM</code>、<code>VLOOKUP</code>、<code>IF</code>，並解釋它們的用途。</li>
+<li><strong>付費版的 ChatGPT 4.0</strong> 能進一步協助處理更複雜的數據分析任務，如多步驟公式、數據模型和自動化流程。</li>
+</ul>
+<p>然而，對於不熟悉 Excel 的人來說，單靠 AI 工具往往很難有效驗證結果，也難以靈活應對各種數據處理場景。因此，<strong>學習 Excel 的基礎知識仍然是必要的</strong>，這能幫助您更好地理解 AI 工具的輸出，並高效地與 AI 協同工作。</p>
+<hr>
+<h3 id="書本自學從入門到進階的學習資源">書本自學：從入門到進階的學習資源</h3>
+<p>如果你偏愛通過閱讀學習，以下這幾本書都是提升工作效率的好選擇，適合從入門到進階的 Excel 使用者。</p>
+<h4 id="1-excel-自學聖經-第二版">1. 《Excel 自學聖經 (第二版)》</h4>
+<p><strong><a href="https://tinyurl.com/2ac9m68h">點我前往金石堂 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/5ppaiZQT93">點我前往蝦皮 《Excel 自學聖經 (第二版)》</a></strong></p>
+<p>這本書被廣泛推薦為入門級的 Excel 學習資源，涵蓋從基本操作到高階應用。書中配有大量範例與圖表，能幫助讀者更好地掌握 Excel 中的公式、函數、資料整理等技巧。特別適合想要全面掌握 Excel 基礎的讀者。</p>
+<h4 id="2-excel-最強商業實戰書濃縮於一冊">2. 《Excel 最強商業實戰書：濃縮於一冊！》</h4>
+<p><strong><a href="https://tinyurl.com/25urgx24">點我前往金石堂 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/2fsYwlh099">點我前往蝦皮 《Excel 最強商業實戰書：濃縮於一冊！》</a></strong></p>
+<p>這本書專注於商業應用場景，適合希望將 Excel 應用於財務、商業決策、數據分析等領域的使用者。書中的實例非常接地氣，能幫助您快速應用到實際工作中，是提升職場競爭力的利器。</p>
+<hr>
+<h3 id="線上課程彈性學習提升效率">線上課程：彈性學習，提升效率</h3>
+<p>線上課程提供了靈活的學習方式，不僅可以讓您在任何時間、任何地點進行學習，還能隨時更新學習內容，確保您掌握的技能與最新趨勢接軌。這對於工作繁忙的專業人士來說尤為方便，此外線上課程的價格通常比實體課程更具競爭力。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29po3mcp">Excel 新手入門必修課</a></strong>：這門課程專為初學者設計，能幫助您快速上手 Excel 的基本操作與數據處理。</li>
+<li><strong><a href="https://tinyurl.com/26h5htqk">職場必備的 Excel 進階技法</a></strong>：針對有一定基礎的使用者，進一步學習進階函數、樞紐分析、圖表設計等技法。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/29kkrgm2">Udemy 線上課程－Excel</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 Excel 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>26 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_syntax_basics.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>25 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+  
+  
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           
+           const links = document.querySelectorAll('a[href^="http"]');
+           
+           links.forEach(function(link) {
+             if (link.hostname !== window.location.hostname) {
+               link.setAttribute("target", "_blank");
+               link.setAttribute("rel", "noopener noreferrer");
+             }
+           });
+         });
+       </script>
+       
 </html>

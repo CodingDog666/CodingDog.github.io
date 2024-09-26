@@ -173,8 +173,8 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         
-        <a href="/categories/excel"
-          class="text-primary">Excel</a>
+        <a href="/categories/vba%e5%b7%a8%e9%9b%86"
+          class="text-primary">Vba巨集</a>
         
 
         
@@ -261,8 +261,8 @@ End Sub
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/excel/">點我前往更多文章</a></strong></em></p>
-<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://CordingDog.github.io/tags/VBA/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
 
         </div>
         
@@ -278,6 +278,25 @@ End Sub
     <div class="row">
 
             
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
       
       <div class="col-lg-4 small-post-border">
         <article class="media">
@@ -313,25 +332,6 @@ End Sub
             </div>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_intro%E5%B0%81%E9%9D%A2.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>22 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="h5 d-block mb-3">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-introduction/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -463,4 +463,206 @@ End Sub
   </script>
 
 </body>
+
+          
+  
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/vba%e5%b7%a8%e9%9b%86"
+          class="text-primary">Vba巨集</a>
+        
+
+        
+        <div class="mb-3 post-meta">
+          
+          <span>By CordingDog</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>26 September 2024</span>
+          
+        </div>
+        
+        
+        
+        <div class="content mb-5">
+          <h1 id="vba-中的物件模型如何與-excel-工作簿工作表和儲存格互動">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動</h1>
+<p><img src="../../images/VBA/vba_object_model.png" alt="VBA 物件模型"></p>
+<p>在 VBA (Visual Basic for Applications) 中，<strong>物件模型</strong>是用來與 Excel 的各個組件進行互動的關鍵概念。透過了解物件模型的架構，我們可以輕鬆自動化任務，管理工作簿、工作表、儲存格等。</p>
+<h2 id="物件的概念">物件的概念</h2>
+<p>在 VBA 中，<strong>物件</strong>代表 Excel 應用程式中的各種元素，比如 <strong>工作簿</strong> (Workbook)、<strong>工作表</strong> (Worksheet) 和 <strong>儲存格範圍</strong> (Range)。每個物件都有其屬性、方法和事件。學會如何操作這些物件是 VBA 自動化的核心。</p>
+<ul>
+<li><strong>屬性</strong>：物件的特徵，例如工作表的名稱。</li>
+<li><strong>方法</strong>：物件能執行的動作，例如新增或刪除工作表。</li>
+<li><strong>事件</strong>：物件反應的觸發條件，例如當儲存工作簿時。</li>
+</ul>
+<hr>
+<h2 id="重要的-excel-物件">重要的 Excel 物件</h2>
+<h3 id="1-workbook-工作簿">1. <strong>Workbook (工作簿)</strong></h3>
+<p><strong>Workbook</strong> 代表 Excel 檔案。每個工作簿包含多個工作表，使用 VBA 可以開啟、關閉或儲存工作簿。範例：</p>
+<pre tabindex="0"><code>Workbooks.Add &#39; 新增一個新的工作簿
+Workbooks(&#34;Example.xlsx&#34;).Close &#39; 關閉名為 Example 的工作簿
+</code></pre><h3 id="2-worksheet-工作表">2. <strong>Worksheet (工作表)</strong></h3>
+<p><strong>Worksheet</strong> 代表 Excel 中的單張工作表。可以新增、刪除、複製和命名工作表。範例：</p>
+<pre tabindex="0"><code>Worksheets.Add &#39; 新增一個新的工作表
+Worksheets(&#34;Sheet1&#34;).Name = &#34;新工作表&#34; &#39; 更改工作表名稱
+</code></pre><h3 id="3-range-儲存格範圍"><strong>3. Range (儲存格範圍)</strong></h3>
+<p><strong>Range</strong> 是 Excel 中最常用的物件之一，代表工作表中的一個或多個儲存格。透過 VBA，您可以讀取或修改儲存格內容、格式和其他屬性。範例：</p>
+<pre tabindex="0"><code>Range(&#34;A1&#34;).Value = &#34;Hello&#34; &#39; 在 A1 儲存格中填入資料
+Range(&#34;A1:A10&#34;).Font.Bold = True &#39; 將 A1 到 A10 的文字設為粗體
+</code></pre><hr>
+<h2 id="使用-vba-操作-excel-工作表和儲存格">使用 VBA 操作 Excel 工作表和儲存格</h2>
+<p>VBA 允許您自動化各種 Excel 任務，從新增工作表到格式化範圍。了解這些物件及其操作方式後，您可以輕鬆撰寫程式來管理工作簿和數據。</p>
+<h4 id="自動新增命名與格式化工作表的範例">自動新增、命名與格式化工作表的範例</h4>
+<p>下面是一個簡單的 VBA 範例，示範如何自動新增工作表、命名它，並且在特定範圍內填入資料和格式化。</p>
+<pre tabindex="0"><code>Sub 自動化工作表操作()
+    &#39; 新增工作表並命名
+    Dim ws As Worksheet
+    Set ws = Worksheets.Add
+    ws.Name = &#34;自動生成的工作表&#34;
+
+    &#39; 在新工作表中填入資料
+    ws.Range(&#34;A1&#34;).Value = &#34;員工名單&#34;
+    ws.Range(&#34;A2&#34;).Value = &#34;員工姓名&#34;
+    ws.Range(&#34;B2&#34;).Value = &#34;年齡&#34;
+
+    &#39; 設定儲存格格式
+    ws.Range(&#34;A1:B1&#34;).Font.Bold = True
+    ws.Range(&#34;A2:B10&#34;).Borders.LineStyle = xlContinuous
+End Sub
+</code></pre><p>這段程式碼將自動在 Excel 中新增一個新工作表，命名為 &ldquo;自動生成的工作表&rdquo;，並在該工作表中填入標題和數據，同時格式化儲存格。</p>
+<hr>
+<h2 id="結論">結論</h2>
+<p>VBA 的物件模型是 Excel 自動化的核心。透過瞭解 Workbook、Worksheet 和 Range 這些重要物件，您可以大幅提高工作效率，讓重複性的任務變得自動化。持續學習和練習 VBA 的語法，將使您能夠處理更複雜的數據操作和應用程式整合。</p>
+<hr>
+<h3 id="書籍推薦從入門到進階的學習資源">書籍推薦：從入門到進階的學習資源</h3>
+<p>如果你更喜歡透過閱讀來學習 VBA，以下是一本經典的書籍推薦，適合從入門到進階使用者。</p>
+<ul>
+<li><em><strong>最新Excel VBA基礎必修課</strong></em>。這本書提供了全面的 Excel VBA 基礎培訓，包括程式設計、問題解決以及實際範例，非常適合初學者開始學習 VBA。</li>
+</ul>
+<p><strong><a href="https://tinyurl.com/297nlj7u">點我前往金石堂 《最新Excel VBA基礎必修課》</a></strong></p>
+<p><strong><a href="https://s.shopee.tw/9pLjTttuPy">點我前往蝦皮 《最新Excel VBA基礎必修課》</a></strong></p>
+<hr>
+<h3 id="線上課程推薦隨時隨地學習">線上課程推薦：隨時隨地學習</h3>
+<p>線上課程的彈性學習方式對於繁忙的工作者來說非常實用。以下兩個平台提供了豐富的 VBA 和 Excel 課程，無論你是初學者還是進階使用者，都能找到適合的課程。</p>
+<h4 id="hahow-線上課程平台">Hahow 線上課程平台</h4>
+<p><strong>Hahow</strong> 是一個受歡迎的學習平台，涵蓋多種專業課程，適合不同層級的學習者。平台上的課程內容實用，並且由專業講師授課，讓學員可以在短時間內掌握實用技能。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/25uvvrss">玩轉數據與資料：Excel VBA 入門教學</a></strong>：這門課程專為初學者設計，能幫助您快速上手 VBA 的基本操作與數據處理。從 Excel VBA 入門的環境設定開始，透過實作範例練習，帶領學生寫出想要的程式碼，學習迴圈雨判斷式的多結構混合應用，來進行數據與資料的處理分析。</li>
+</ul>
+<h4 id="udemy-線上課程平台">Udemy 線上課程平台</h4>
+<p><strong>Udemy</strong> 提供了豐富的課程選擇，無論是技術技能（如 Excel、Python），還是軟技能（如時間管理、領導力），您都能在 Udemy 上找到適合的課程。該平台經常提供折扣，尤其在促銷期間，您可以以實惠的價格學到高品質的內容。</p>
+<ul>
+<li><strong><a href="https://tinyurl.com/28lmlvzr">Udemy 線上課程－VBA</a></strong>：這門課程從基礎開始，一直到進階的樞紐分析和數據可視化，適合希望快速提升 VBA 技能的人士。</li>
+</ul>
+<hr>
+<h2 id="延伸閱讀">延伸閱讀</h2>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+
+        </div>
+        
+
+<section>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12">
+        <h2 class="recent-post-title">Recent Posts</h2>
+      </div>
+    </div>
+    <div class="row">
+
+            
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/vba/vba_events_and_custom_functions.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>27 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>26 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_syntax_basics.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>25 Sep 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="h5 d-block mb-3">VBA 的語法與基本操作：掌握程式設計的核心技能 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-automation/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+        
+        
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+  
+  
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+           
+           const links = document.querySelectorAll('a[href^="http"]');
+           
+           links.forEach(function(link) {
+             if (link.hostname !== window.location.hostname) {
+               link.setAttribute("target", "_blank");
+               link.setAttribute("rel", "noopener noreferrer");
+             }
+           });
+         });
+       </script>
+       
 </html>
