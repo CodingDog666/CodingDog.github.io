@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
     
 
-    <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
+    <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="了解如何使用VBA撰寫簡單的Excel巨集，提升工作效率。學習 VBA 的基本語法與步驟，讓你快速上手自動化任務。">
+    <meta name="description" content="本篇文章將介紹 VBA 中的資料型別與常量宣告的關鍵字，包括如何正確使用 Dim、Const 和不同的資料型別來提升程式效率與可靠性。">
     <meta name="author" content="CordingDog">
   
     
@@ -19,23 +19,23 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/slick/slick.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/slick/slick.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/themify-icons/themify-icons.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/venobox/venobox.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/venobox/venobox.css ">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
 
   <!--Favicon-->
   
   
-  <link rel="shortcut icon" href="https://CodingDog666.github.io/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon">
 
 
 
@@ -98,8 +98,8 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
-          src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+      <a class="navbar-brand mobile-view" href="http://localhost:1313/"><img class="img-fluid"
+          src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
       </button>
@@ -111,38 +111,38 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
-            src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+        <a class="navbar-brand mx-auto desktop-view" href="http://localhost:1313/"><img class="img-fluid"
+            src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
 
         <ul class="navbar-nav">
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/">所有文章</a>
+            <a class="nav-link" href="http://localhost:1313/">所有文章</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/excel/">Excel</a>
+            <a class="nav-link" href="http://localhost:1313/categories/excel/">Excel</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">VBA巨集</a>
+            <a class="nav-link" href="http://localhost:1313/categories/vba%E5%B7%A8%E9%9B%86/">VBA巨集</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/test/">Python</a>
+            <a class="nav-link" href="http://localhost:1313/categories/test/">Python</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/ai/">AI</a>
+            <a class="nav-link" href="http://localhost:1313/categories/ai/">AI</a>
           </li>
           
           
@@ -153,7 +153,7 @@
         <div class="search pl-lg-4">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="https://CodingDog666.github.io//search" class="h-100">
+            <form action="http://localhost:1313//search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
@@ -183,72 +183,73 @@
           <span>By CordingDog</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>22 September 2024</span>
+          <span>28 September 2024</span>
           
         </div>
         
         
         
         <div class="content mb-5">
-          <h1 id="撰寫你的第一個vba巨集提升-excel-自動化效率的必備技能">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能</h1>
-<img src="../../images/VBA/vba_intro%e5%b0%81%e9%9d%a2.png" alt="VBA 簡介" loading="lazy">
+          <h1 id="vba-關鍵字簡介資料型別與常量宣告-第二篇">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇)</h1>
+<img src="../../images/VBA/vba_keywords_types.png" alt="VBA 關鍵字簡介" loading="lazy">
 
-<p>VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</p>
-<h2 id="vba-是什麼">VBA 是什麼？</h2>
-<p>VBA 是一種編程語言，專門設計來擴展 Microsoft Office 應用程式的功能。通過 VBA，你可以記錄和執行巨集（macros），這些巨集能夠幫助你完成繁瑣的任務，如自動輸入數據、生成報告、格式化表格等等。使用 VBA 的核心目的是將重複性任務自動化，讓 Excel 的功能更強大、更靈活。</p>
-<h3 id="學習-vba-的好處">學習 VBA 的好處</h3>
-<ul>
-<li><strong>自動化日常任務</strong>：減少人工操作，提升工作效率。</li>
-<li><strong>提升精準度</strong>：程式控制下避免手動錯誤，確保數據的正確性。</li>
-<li><strong>擴展功能</strong>：VBA 允許你設計自訂功能，根據特定需求進行操作。</li>
-<li><strong>跨應用整合</strong>：VBA 支援不同 Microsoft 應用程式的整合，例如讓 Excel 與 Outlook 互動，實現自動發送報表等功能。</li>
-</ul>
-<h2 id="如何啟用-excel-的-vba-編輯器">如何啟用 Excel 的 VBA 編輯器</h2>
-<p>如果你還沒有接觸過 VBA，這裡是簡單的開啟步驟：</p>
-<ol>
-<li><strong>啟用開發人員選項</strong>：打開 Excel，點擊「檔案」→「選項」→「自訂功能區」，勾選「開發人員」選項。</li>
-</ol>
-<img src="../../images/VBA/vba_intro1.png" alt="VBA 簡介" loading="lazy">
-
-<ol start="2">
-<li><strong>開啟 VBA 編輯器</strong>：選擇 Excel 的「開發人員」選項卡，點擊「Visual Basic」按鈕，進入 VBA 編輯器。</li>
-</ol>
-<img src="../../images/VBA/vba_intro2.png" alt="VBA 簡介" loading="lazy">
-
-<h2 id="vba-的基本語法介紹">VBA 的基本語法介紹</h2>
-<p>撰寫 VBA 程式並不困難，從簡單的語法學起，你很快就能上手。以下介紹 VBA 的基礎語法結構。</p>
-<h3 id="巨集與-sub-程式">巨集與 Sub 程式</h3>
-<p>在 VBA 中，巨集是使用 <strong>Sub&hellip;End Sub</strong> 來定義的。每個 Sub 程式都能執行特定的任務，例如資料處理或自動化操作。</p>
-<h4 id="sub-程式語法範例">Sub 程式語法範例</h4>
-<p>以下是 Sub 和 End Sub 的語法範例：</p>
-<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 我的第一個巨集()
-    MsgBox &#34;Hello, world!&#34; &#39; 顯示訊息框
-End Sub
-</code></pre><p>當你執行這段程式時，Excel 會顯示訊息框「Hello, world!」。這是一個簡單的開始，你可以在 VBA 中進一步探索如何控制 Excel 的行為。</p>
-<h2 id="如何撰寫第一個-excel-巨集">如何撰寫第一個 Excel 巨集</h2>
-<p>現在我們來學習如何撰寫並執行一個簡單的巨集。</p>
-<ol>
-<li><em><strong>開啟開發人員工具列</strong></em>：啟用開發人員選項，打開 Excel 的「開發人員」功能區。</li>
-<li><em><strong>進入 VBA 編輯器</strong></em>：點擊「Visual Basic」，進入 VBA 編輯器介面。</li>
-<li><em><strong>撰寫巨集程式</strong></em>：在 VBA 編輯器中，點擊「插入」→「模組」來建立一個新模組，然後在模組中輸入以下程式碼：</li>
-</ol>
-<pre tabindex="0"><code>Sub 自動填充資料()
-    Range(&#34;A1:A10&#34;).Value = &#34;Hello&#34;
-End Sub
-</code></pre><ol start="4">
-<li>執行巨集：按下 F5 鍵來執行這段程式碼，或回到 Excel，在「開發人員」功能區中點擊「巨集」按鈕，選擇你撰寫的巨集來執行。</li>
-</ol>
-<p>這段程式碼會自動在 Excel 中的 A1 到 A10 儲存格填入「Hello」，簡化了手動輸入資料的流程。</p>
-<h2 id="小結">小結</h2>
-<p>學習 VBA 不僅能夠幫助你自動化日常工作，還能大大提升工作效率。無論是簡單的資料填充，還是複雜的報告生成，VBA 都能為你提供靈活的解決方案。通過不斷練習和探索，你將發現 VBA 是一個強大的工具，幫助你在 Excel 中輕鬆完成自動化任務。</p>
-<h4 id="重點提示">重點提示：</h4>
-<ul>
-<li>自動化工作流程：通過 VBA 自動處理重複性任務。</li>
-<li>避免手動錯誤：程式自動化能避免人為錯誤，提高數據準確性。</li>
-<li>靈活擴展 Excel 功能：自行撰寫巨集，滿足特定需求。</li>
-</ul>
-<p>透過這些技巧，你將逐步掌握 VBA，讓 Excel 成為更高效的工作夥伴！</p>
+<p>在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 <strong>Dim</strong>、<strong>Const</strong> 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</p>
+<h2 id="1-dim宣告變數">1. Dim：宣告變數</h2>
+<p><strong>Dim</strong> 是用來宣告變數的關鍵字。變數是程式中用來儲存資料的容器，透過 <code>Dim</code>，你可以宣告不同資料型別的變數，這有助於提升程式的效能和精確度。</p>
 <hr>
+<h2 id="2-常見的資料型別">2. 常見的資料型別</h2>
+<p>正確使用資料型別對於程式執行效率至關重要，因為每種資料型別都佔用不同的記憶體空間，並能處理不同種類的數據。以下是 VBA 中幾種常見的資料型別，並適用於不同的情境：</p>
+<h3 id="--integer整數">- <strong>Integer（整數）</strong></h3>
+<p><strong>Integer</strong> 用來儲存沒有小數點的整數值，範圍大約在 -32,768 到 32,767 之間。它適合用來處理數量、計數器或任何不需要小數的數據。</p>
+<pre tabindex="0"><code>Dim i As Integer
+i = 10 &#39; 整數範圍內的值
+</code></pre><h3 id="--long長整數">- <strong>Long（長整數）</strong></h3>
+<p><strong>Long</strong> 用來儲存範圍更大的整數值，適合處理需要超過 Integer 範圍的數據，範圍可達 -2,147,483,648 到 2,147,483,647。這個型別通常用於處理大型數據集中的行數或計算更大數值。</p>
+<pre tabindex="0"><code>Dim largeNumber As Long
+largeNumber = 1000000 &#39; 大於 Integer 能處理的範圍
+</code></pre><h3 id="--double雙精度浮點數">- <strong>Double（雙精度浮點數）</strong></h3>
+<p>Double 用來儲存具有小數點的數值，適合處理更精確的計算，如財務計算或科學應用中的小數。相比其他資料型別，Double 具有更高的精度，能夠處理非常小或非常大的浮點數。</p>
+<pre tabindex="0"><code>Dim score As Double
+score = 99.99 &#39; 儲存精確到小數點後的值
+</code></pre><h3 id="--string字串">- <strong>String（字串）</strong></h3>
+<p>String 用來儲存文字或字符序列，如名字、地址或其他需要處理文字的數據。字串可以長達 2GB，因此幾乎可以儲存任意長度的文本。</p>
+<pre tabindex="0"><code>Dim name As String
+name = &#34;CordingDog&#34; &#39; 儲存文字數據
+</code></pre><h3 id="--boolean布林值">- <strong>Boolean（布林值）</strong></h3>
+<p>Boolean 僅能儲存兩種值：True 或 False。這個型別適合用來處理邏輯判斷或條件語句，例如是否啟用某個功能。</p>
+<pre tabindex="0"><code>Dim isValid As Boolean
+isValid = True &#39; 用於判斷條件是否成立
+</code></pre><h3 id="--date日期">- Date（日期）</h3>
+<p>Date 用來儲存日期和時間。這個型別特別適合處理日曆上的時間操作，例如排程或計算日期之間的差異。</p>
+<pre tabindex="0"><code>Dim today As Date
+today = Now &#39; 儲存當前的日期與時間
+</code></pre><hr>
+<h2 id="3-const宣告常量">3. Const：宣告常量</h2>
+<p><strong>Const</strong> Const 用來宣告一個常數，它的值在程式執行期間不會改變。常量通常用來儲存一些不變的設定值，例如稅率或計算中的常數。</p>
+<pre tabindex="0"><code>Const Pi As Double = 3.14159
+Const TaxRate As Double = 0.05
+</code></pre><h4 id="為什麼使用常量">為什麼使用常量？</h4>
+<p>使用常量可以確保程式中的固定值不會被無意修改，這有助於提高程式的可靠性。此外，它讓程式碼更具可讀性，因為開發者可以使用有意義的名稱來表示具體數值。</p>
+<hr>
+<h2 id="4範例使用-dim-和-const-進行計算">4.範例：使用 Dim 和 Const 進行計算</h2>
+<p>在下面的範例中，我們將使用 Dim 宣告變數，並使用 Const 來進行常數的設定。這個範例會計算一個商品的最終價格，考慮了折扣與稅率。</p>
+<pre tabindex="0"><code>Sub 計算價格()
+    Const TaxRate As Double = 0.07
+    Dim 原價 As Double
+    Dim 折扣 As Double
+    Dim 最終價格 As Double
+
+    原價 = 1000
+    折扣 = 0.1 &#39; 10% 折扣
+    最終價格 = 原價 * (1 - 折扣) * (1 + TaxRate)
+
+    MsgBox &#34;最終價格是: &#34; &amp; 最終價格
+End Sub
+</code></pre><p>這段程式會將原價 1000 元，應用 10% 折扣和 7% 稅率後，計算出最終價格並顯示在訊息框中。</p>
+<hr>
+<h2 id="小結">小結</h2>
+<p>在這篇文章中，我們介紹了 VBA 中的兩個關鍵字：Dim 用來宣告變數，而 Const 則用來宣告常數。正確使用這些關鍵字，並選擇合適的資料型別，能夠提升 VBA 程式的效率、可讀性和可維護性。</p>
+<p>在下一篇文章中，我們將探討 VBA 中的條件語句，學習如何在程式中進行決策與邏輯判斷，讓程式變得更加靈活與強大。</p>
 <h2 id="為什麼需要學習-vba自動化-excel-任務的關鍵技能">為什麼需要學習 VBA？自動化 Excel 任務的關鍵技能</h2>
 <p>學習 VBA（Visual Basic for Applications） 是每位 Excel 使用者提升效率的關鍵。VBA 不僅可以大幅提升數據處理的速度，還能讓我們在工作中自動化多種任務。透過撰寫簡單的程式碼，你可以自動化重複性工作，並大大減少人為錯誤。</p>
 <h3 id="為什麼-ai-無法完全取代-vba">為什麼 AI 無法完全取代 VBA？</h3>
@@ -297,7 +298,7 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_intro.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -307,8 +308,8 @@ End Sub
               <span>28 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -316,7 +317,26 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_events_and_custom_functions.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_types.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>28 Sep 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_types/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_events_and_custom_functions.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -326,27 +346,8 @@ End Sub
               <span>27 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>26 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -370,33 +371,33 @@ End Sub
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
-        <a href="https://CodingDog666.github.io/"><img src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+        <a href="http://localhost:1313/"><img src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
       </div>
       
       
 <script>
-  var indexURL = "https://CodingDog666.github.io/index.json"
+  var indexURL = "http://localhost:1313/index.json"
 </script>
 
 <!-- JS Plugins -->
 
-<script src="https://CodingDog666.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/slick/slick.min.js"></script>
+<script src="http://localhost:1313/plugins/slick/slick.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/venobox/venobox.min.js"></script>
+<script src="http://localhost:1313/plugins/venobox/venobox.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/fuse.min.js"></script>
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/mark.js"></script>
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/search.js"></script>
+<script src="http://localhost:1313/plugins/search/search.js"></script>
 
 <!-- Main Script -->
 
-<script src="https://CodingDog666.github.io/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
 
 
@@ -497,72 +498,73 @@ End Sub
           <span>By CordingDog</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>22 September 2024</span>
+          <span>28 September 2024</span>
           
         </div>
         
         
         
         <div class="content mb-5">
-          <h1 id="撰寫你的第一個vba巨集提升-excel-自動化效率的必備技能">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能</h1>
-<img src="../../images/VBA/vba_intro%e5%b0%81%e9%9d%a2.png" alt="VBA 簡介" loading="lazy">
+          <h1 id="vba-關鍵字簡介資料型別與常量宣告-第二篇">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇)</h1>
+<img src="../../images/VBA/vba_keywords_types.png" alt="VBA 關鍵字簡介" loading="lazy">
 
-<p>VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</p>
-<h2 id="vba-是什麼">VBA 是什麼？</h2>
-<p>VBA 是一種編程語言，專門設計來擴展 Microsoft Office 應用程式的功能。通過 VBA，你可以記錄和執行巨集（macros），這些巨集能夠幫助你完成繁瑣的任務，如自動輸入數據、生成報告、格式化表格等等。使用 VBA 的核心目的是將重複性任務自動化，讓 Excel 的功能更強大、更靈活。</p>
-<h3 id="學習-vba-的好處">學習 VBA 的好處</h3>
-<ul>
-<li><strong>自動化日常任務</strong>：減少人工操作，提升工作效率。</li>
-<li><strong>提升精準度</strong>：程式控制下避免手動錯誤，確保數據的正確性。</li>
-<li><strong>擴展功能</strong>：VBA 允許你設計自訂功能，根據特定需求進行操作。</li>
-<li><strong>跨應用整合</strong>：VBA 支援不同 Microsoft 應用程式的整合，例如讓 Excel 與 Outlook 互動，實現自動發送報表等功能。</li>
-</ul>
-<h2 id="如何啟用-excel-的-vba-編輯器">如何啟用 Excel 的 VBA 編輯器</h2>
-<p>如果你還沒有接觸過 VBA，這裡是簡單的開啟步驟：</p>
-<ol>
-<li><strong>啟用開發人員選項</strong>：打開 Excel，點擊「檔案」→「選項」→「自訂功能區」，勾選「開發人員」選項。</li>
-</ol>
-<img src="../../images/VBA/vba_intro1.png" alt="VBA 簡介" loading="lazy">
-
-<ol start="2">
-<li><strong>開啟 VBA 編輯器</strong>：選擇 Excel 的「開發人員」選項卡，點擊「Visual Basic」按鈕，進入 VBA 編輯器。</li>
-</ol>
-<img src="../../images/VBA/vba_intro2.png" alt="VBA 簡介" loading="lazy">
-
-<h2 id="vba-的基本語法介紹">VBA 的基本語法介紹</h2>
-<p>撰寫 VBA 程式並不困難，從簡單的語法學起，你很快就能上手。以下介紹 VBA 的基礎語法結構。</p>
-<h3 id="巨集與-sub-程式">巨集與 Sub 程式</h3>
-<p>在 VBA 中，巨集是使用 <strong>Sub&hellip;End Sub</strong> 來定義的。每個 Sub 程式都能執行特定的任務，例如資料處理或自動化操作。</p>
-<h4 id="sub-程式語法範例">Sub 程式語法範例</h4>
-<p>以下是 Sub 和 End Sub 的語法範例：</p>
-<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 我的第一個巨集()
-    MsgBox &#34;Hello, world!&#34; &#39; 顯示訊息框
-End Sub
-</code></pre><p>當你執行這段程式時，Excel 會顯示訊息框「Hello, world!」。這是一個簡單的開始，你可以在 VBA 中進一步探索如何控制 Excel 的行為。</p>
-<h2 id="如何撰寫第一個-excel-巨集">如何撰寫第一個 Excel 巨集</h2>
-<p>現在我們來學習如何撰寫並執行一個簡單的巨集。</p>
-<ol>
-<li><em><strong>開啟開發人員工具列</strong></em>：啟用開發人員選項，打開 Excel 的「開發人員」功能區。</li>
-<li><em><strong>進入 VBA 編輯器</strong></em>：點擊「Visual Basic」，進入 VBA 編輯器介面。</li>
-<li><em><strong>撰寫巨集程式</strong></em>：在 VBA 編輯器中，點擊「插入」→「模組」來建立一個新模組，然後在模組中輸入以下程式碼：</li>
-</ol>
-<pre tabindex="0"><code>Sub 自動填充資料()
-    Range(&#34;A1:A10&#34;).Value = &#34;Hello&#34;
-End Sub
-</code></pre><ol start="4">
-<li>執行巨集：按下 F5 鍵來執行這段程式碼，或回到 Excel，在「開發人員」功能區中點擊「巨集」按鈕，選擇你撰寫的巨集來執行。</li>
-</ol>
-<p>這段程式碼會自動在 Excel 中的 A1 到 A10 儲存格填入「Hello」，簡化了手動輸入資料的流程。</p>
-<h2 id="小結">小結</h2>
-<p>學習 VBA 不僅能夠幫助你自動化日常工作，還能大大提升工作效率。無論是簡單的資料填充，還是複雜的報告生成，VBA 都能為你提供靈活的解決方案。通過不斷練習和探索，你將發現 VBA 是一個強大的工具，幫助你在 Excel 中輕鬆完成自動化任務。</p>
-<h4 id="重點提示">重點提示：</h4>
-<ul>
-<li>自動化工作流程：通過 VBA 自動處理重複性任務。</li>
-<li>避免手動錯誤：程式自動化能避免人為錯誤，提高數據準確性。</li>
-<li>靈活擴展 Excel 功能：自行撰寫巨集，滿足特定需求。</li>
-</ul>
-<p>透過這些技巧，你將逐步掌握 VBA，讓 Excel 成為更高效的工作夥伴！</p>
+<p>在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 <strong>Dim</strong>、<strong>Const</strong> 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</p>
+<h2 id="1-dim宣告變數">1. Dim：宣告變數</h2>
+<p><strong>Dim</strong> 是用來宣告變數的關鍵字。變數是程式中用來儲存資料的容器，透過 <code>Dim</code>，你可以宣告不同資料型別的變數，這有助於提升程式的效能和精確度。</p>
 <hr>
+<h2 id="2-常見的資料型別">2. 常見的資料型別</h2>
+<p>正確使用資料型別對於程式執行效率至關重要，因為每種資料型別都佔用不同的記憶體空間，並能處理不同種類的數據。以下是 VBA 中幾種常見的資料型別，並適用於不同的情境：</p>
+<h3 id="--integer整數">- <strong>Integer（整數）</strong></h3>
+<p><strong>Integer</strong> 用來儲存沒有小數點的整數值，範圍大約在 -32,768 到 32,767 之間。它適合用來處理數量、計數器或任何不需要小數的數據。</p>
+<pre tabindex="0"><code>Dim i As Integer
+i = 10 &#39; 整數範圍內的值
+</code></pre><h3 id="--long長整數">- <strong>Long（長整數）</strong></h3>
+<p><strong>Long</strong> 用來儲存範圍更大的整數值，適合處理需要超過 Integer 範圍的數據，範圍可達 -2,147,483,648 到 2,147,483,647。這個型別通常用於處理大型數據集中的行數或計算更大數值。</p>
+<pre tabindex="0"><code>Dim largeNumber As Long
+largeNumber = 1000000 &#39; 大於 Integer 能處理的範圍
+</code></pre><h3 id="--double雙精度浮點數">- <strong>Double（雙精度浮點數）</strong></h3>
+<p>Double 用來儲存具有小數點的數值，適合處理更精確的計算，如財務計算或科學應用中的小數。相比其他資料型別，Double 具有更高的精度，能夠處理非常小或非常大的浮點數。</p>
+<pre tabindex="0"><code>Dim score As Double
+score = 99.99 &#39; 儲存精確到小數點後的值
+</code></pre><h3 id="--string字串">- <strong>String（字串）</strong></h3>
+<p>String 用來儲存文字或字符序列，如名字、地址或其他需要處理文字的數據。字串可以長達 2GB，因此幾乎可以儲存任意長度的文本。</p>
+<pre tabindex="0"><code>Dim name As String
+name = &#34;CordingDog&#34; &#39; 儲存文字數據
+</code></pre><h3 id="--boolean布林值">- <strong>Boolean（布林值）</strong></h3>
+<p>Boolean 僅能儲存兩種值：True 或 False。這個型別適合用來處理邏輯判斷或條件語句，例如是否啟用某個功能。</p>
+<pre tabindex="0"><code>Dim isValid As Boolean
+isValid = True &#39; 用於判斷條件是否成立
+</code></pre><h3 id="--date日期">- Date（日期）</h3>
+<p>Date 用來儲存日期和時間。這個型別特別適合處理日曆上的時間操作，例如排程或計算日期之間的差異。</p>
+<pre tabindex="0"><code>Dim today As Date
+today = Now &#39; 儲存當前的日期與時間
+</code></pre><hr>
+<h2 id="3-const宣告常量">3. Const：宣告常量</h2>
+<p><strong>Const</strong> Const 用來宣告一個常數，它的值在程式執行期間不會改變。常量通常用來儲存一些不變的設定值，例如稅率或計算中的常數。</p>
+<pre tabindex="0"><code>Const Pi As Double = 3.14159
+Const TaxRate As Double = 0.05
+</code></pre><h4 id="為什麼使用常量">為什麼使用常量？</h4>
+<p>使用常量可以確保程式中的固定值不會被無意修改，這有助於提高程式的可靠性。此外，它讓程式碼更具可讀性，因為開發者可以使用有意義的名稱來表示具體數值。</p>
+<hr>
+<h2 id="4範例使用-dim-和-const-進行計算">4.範例：使用 Dim 和 Const 進行計算</h2>
+<p>在下面的範例中，我們將使用 Dim 宣告變數，並使用 Const 來進行常數的設定。這個範例會計算一個商品的最終價格，考慮了折扣與稅率。</p>
+<pre tabindex="0"><code>Sub 計算價格()
+    Const TaxRate As Double = 0.07
+    Dim 原價 As Double
+    Dim 折扣 As Double
+    Dim 最終價格 As Double
+
+    原價 = 1000
+    折扣 = 0.1 &#39; 10% 折扣
+    最終價格 = 原價 * (1 - 折扣) * (1 + TaxRate)
+
+    MsgBox &#34;最終價格是: &#34; &amp; 最終價格
+End Sub
+</code></pre><p>這段程式會將原價 1000 元，應用 10% 折扣和 7% 稅率後，計算出最終價格並顯示在訊息框中。</p>
+<hr>
+<h2 id="小結">小結</h2>
+<p>在這篇文章中，我們介紹了 VBA 中的兩個關鍵字：Dim 用來宣告變數，而 Const 則用來宣告常數。正確使用這些關鍵字，並選擇合適的資料型別，能夠提升 VBA 程式的效率、可讀性和可維護性。</p>
+<p>在下一篇文章中，我們將探討 VBA 中的條件語句，學習如何在程式中進行決策與邏輯判斷，讓程式變得更加靈活與強大。</p>
 <h2 id="為什麼需要學習-vba自動化-excel-任務的關鍵技能">為什麼需要學習 VBA？自動化 Excel 任務的關鍵技能</h2>
 <p>學習 VBA（Visual Basic for Applications） 是每位 Excel 使用者提升效率的關鍵。VBA 不僅可以大幅提升數據處理的速度，還能讓我們在工作中自動化多種任務。透過撰寫簡單的程式碼，你可以自動化重複性工作，並大大減少人為錯誤。</p>
 <h3 id="為什麼-ai-無法完全取代-vba">為什麼 AI 無法完全取代 VBA？</h3>
@@ -611,7 +613,7 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_intro.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -621,8 +623,8 @@ End Sub
               <span>28 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -630,7 +632,26 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_events_and_custom_functions.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_types.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>28 Sep 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_types/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_events_and_custom_functions.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -640,27 +661,8 @@ End Sub
               <span>27 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>26 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>

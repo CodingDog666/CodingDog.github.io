@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VBA on CordingDog</title>
-    <link>https://CordingDog.github.io/categories/vba/</link>
-    <description>Recent content in VBA on CordingDog</description>
+    <title>VBA on CodingDog</title>
+    <link>http://localhost:1313/categories/vba/</link>
+    <description>Recent content in VBA on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Sep 2024 09:07:47 +0800</lastBuildDate>
-    <atom:link href="https://CordingDog.github.io/categories/vba/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Sep 2024 09:07:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/vba/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
-      <link>https://CordingDog.github.io/blog/vba-introduction/</link>
-      <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
-      <guid>https://CordingDog.github.io/blog/vba-introduction/</guid>
-      <description>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</description>
+      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
+      <link>http://localhost:1313/blog/vba-keywords_intro/</link>
+      <pubDate>Sat, 28 Sep 2024 09:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/vba-keywords_intro/</guid>
+      <description>VBA（Visual Basic for Applications）中有許多關鍵字，每個關鍵字都扮演著特定的功能。本篇文章將介紹幾個基礎且常用的 VBA 關鍵字，幫助你迅速掌握撰寫 VBA 程式的基本概念，並逐步深入。&#xA;1. Sub 和 Function Sub：用來執行一段動作，但不會返回結果。Sub 程式可以包含任何程式碼邏輯，例如在 Excel 中顯示訊息框或操作儲存格。</description>
     </item>
   </channel>
 </rss>

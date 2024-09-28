@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
     
 
-    <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
+    <title>VBA 關鍵字進階指南：控制流程與錯誤處理 (第三篇) - CordingDog</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="了解如何使用VBA撰寫簡單的Excel巨集，提升工作效率。學習 VBA 的基本語法與步驟，讓你快速上手自動化任務。">
+    <meta name="description" content="深入探討 VBA 關鍵字中的控制流程與錯誤處理，包括 Select Case、On Error 等，掌握進階程式設計技術。">
     <meta name="author" content="CordingDog">
   
     
@@ -19,23 +19,23 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/slick/slick.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/slick/slick.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/themify-icons/themify-icons.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css ">
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/plugins/venobox/venobox.css ">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/venobox/venobox.css ">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://CodingDog666.github.io/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
 
   <!--Favicon-->
   
   
-  <link rel="shortcut icon" href="https://CodingDog666.github.io/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon">
 
 
 
@@ -98,8 +98,8 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
-          src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+      <a class="navbar-brand mobile-view" href="http://localhost:1313/"><img class="img-fluid"
+          src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
       </button>
@@ -111,38 +111,38 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://CodingDog666.github.io/"><img class="img-fluid"
-            src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+        <a class="navbar-brand mx-auto desktop-view" href="http://localhost:1313/"><img class="img-fluid"
+            src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
 
         <ul class="navbar-nav">
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/">所有文章</a>
+            <a class="nav-link" href="http://localhost:1313/">所有文章</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/excel/">Excel</a>
+            <a class="nav-link" href="http://localhost:1313/categories/excel/">Excel</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">VBA巨集</a>
+            <a class="nav-link" href="http://localhost:1313/categories/vba%E5%B7%A8%E9%9B%86/">VBA巨集</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/test/">Python</a>
+            <a class="nav-link" href="http://localhost:1313/categories/test/">Python</a>
           </li>
           
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://CodingDog666.github.io/categories/ai/">AI</a>
+            <a class="nav-link" href="http://localhost:1313/categories/ai/">AI</a>
           </li>
           
           
@@ -153,7 +153,7 @@
         <div class="search pl-lg-4">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="https://CodingDog666.github.io//search" class="h-100">
+            <form action="http://localhost:1313//search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
@@ -183,71 +183,87 @@
           <span>By CordingDog</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>22 September 2024</span>
+          <span>28 September 2024</span>
           
         </div>
         
         
         
         <div class="content mb-5">
-          <h1 id="撰寫你的第一個vba巨集提升-excel-自動化效率的必備技能">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能</h1>
-<img src="../../images/VBA/vba_intro%e5%b0%81%e9%9d%a2.png" alt="VBA 簡介" loading="lazy">
+          <h1 id="vba-關鍵字進階指南控制流程與錯誤處理">VBA 關鍵字進階指南：控制流程與錯誤處理</h1>
+<img src="../../images/VBA/vba_control_flow.png" alt="VBA 控制流程" loading="lazy">
 
-<p>VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</p>
-<h2 id="vba-是什麼">VBA 是什麼？</h2>
-<p>VBA 是一種編程語言，專門設計來擴展 Microsoft Office 應用程式的功能。通過 VBA，你可以記錄和執行巨集（macros），這些巨集能夠幫助你完成繁瑣的任務，如自動輸入數據、生成報告、格式化表格等等。使用 VBA 的核心目的是將重複性任務自動化，讓 Excel 的功能更強大、更靈活。</p>
-<h3 id="學習-vba-的好處">學習 VBA 的好處</h3>
-<ul>
-<li><strong>自動化日常任務</strong>：減少人工操作，提升工作效率。</li>
-<li><strong>提升精準度</strong>：程式控制下避免手動錯誤，確保數據的正確性。</li>
-<li><strong>擴展功能</strong>：VBA 允許你設計自訂功能，根據特定需求進行操作。</li>
-<li><strong>跨應用整合</strong>：VBA 支援不同 Microsoft 應用程式的整合，例如讓 Excel 與 Outlook 互動，實現自動發送報表等功能。</li>
-</ul>
-<h2 id="如何啟用-excel-的-vba-編輯器">如何啟用 Excel 的 VBA 編輯器</h2>
-<p>如果你還沒有接觸過 VBA，這裡是簡單的開啟步驟：</p>
-<ol>
-<li><strong>啟用開發人員選項</strong>：打開 Excel，點擊「檔案」→「選項」→「自訂功能區」，勾選「開發人員」選項。</li>
-</ol>
-<img src="../../images/VBA/vba_intro1.png" alt="VBA 簡介" loading="lazy">
-
-<ol start="2">
-<li><strong>開啟 VBA 編輯器</strong>：選擇 Excel 的「開發人員」選項卡，點擊「Visual Basic」按鈕，進入 VBA 編輯器。</li>
-</ol>
-<img src="../../images/VBA/vba_intro2.png" alt="VBA 簡介" loading="lazy">
-
-<h2 id="vba-的基本語法介紹">VBA 的基本語法介紹</h2>
-<p>撰寫 VBA 程式並不困難，從簡單的語法學起，你很快就能上手。以下介紹 VBA 的基礎語法結構。</p>
-<h3 id="巨集與-sub-程式">巨集與 Sub 程式</h3>
-<p>在 VBA 中，巨集是使用 <strong>Sub&hellip;End Sub</strong> 來定義的。每個 Sub 程式都能執行特定的任務，例如資料處理或自動化操作。</p>
-<h4 id="sub-程式語法範例">Sub 程式語法範例</h4>
-<p>以下是 Sub 和 End Sub 的語法範例：</p>
-<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 我的第一個巨集()
-    MsgBox &#34;Hello, world!&#34; &#39; 顯示訊息框
+<p>在前幾篇文章中，我們介紹了 VBA 的基礎關鍵字，如 <code>If...Then...Else</code>、<code>For...Next</code> 等。在這篇文章中，我們將深入探討兩個更進階的主題：<strong>控制流程</strong> 和 <strong>錯誤處理</strong>。這些概念將幫助你撰寫更加靈活且健壯的程式。</p>
+<hr>
+<h2 id="1-控制流程關鍵字">1. 控制流程關鍵字</h2>
+<p>VBA 提供多種控制流程的關鍵字，用來決定程式如何處理不同情境中的指令。其中一個非常有用的關鍵字是 <code>Select Case</code>，它能簡化多條件的判斷。</p>
+<h3 id="select-case-語法">Select Case 語法</h3>
+<pre tabindex="0"><code>Select Case 表達式
+    Case 值1
+        &#39; 當表達式等於值1時執行的動作
+    Case 值2
+        &#39; 當表達式等於值2時執行的動作
+    Case Else
+        &#39; 當所有條件都不符合時執行的動作
+End Select
+</code></pre><h2 id="範例">範例：</h2>
+<pre tabindex="0"><code>Sub 確認成績()
+    Dim 分數 As Integer
+    分數 = 85
+    Select Case 分數
+        Case Is &gt;= 90
+            MsgBox &#34;成績：A&#34;
+        Case Is &gt;= 80
+            MsgBox &#34;成績：B&#34;
+        Case Is &gt;= 70
+            MsgBox &#34;成績：C&#34;
+        Case Else
+            MsgBox &#34;成績不及格&#34;
+    End Select
 End Sub
-</code></pre><p>當你執行這段程式時，Excel 會顯示訊息框「Hello, world!」。這是一個簡單的開始，你可以在 VBA 中進一步探索如何控制 Excel 的行為。</p>
-<h2 id="如何撰寫第一個-excel-巨集">如何撰寫第一個 Excel 巨集</h2>
-<p>現在我們來學習如何撰寫並執行一個簡單的巨集。</p>
-<ol>
-<li><em><strong>開啟開發人員工具列</strong></em>：啟用開發人員選項，打開 Excel 的「開發人員」功能區。</li>
-<li><em><strong>進入 VBA 編輯器</strong></em>：點擊「Visual Basic」，進入 VBA 編輯器介面。</li>
-<li><em><strong>撰寫巨集程式</strong></em>：在 VBA 編輯器中，點擊「插入」→「模組」來建立一個新模組，然後在模組中輸入以下程式碼：</li>
-</ol>
-<pre tabindex="0"><code>Sub 自動填充資料()
-    Range(&#34;A1:A10&#34;).Value = &#34;Hello&#34;
+</code></pre><p>這個範例根據分數的範圍顯示相應的成績評級，使用 Select Case 可以使多條件判斷的程式更加整潔明瞭。</p>
+<hr>
+<h2 id="2-錯誤處理關鍵字">2. 錯誤處理關鍵字</h2>
+<p>程式在執行過程中，難免會遇到錯誤。VBA 提供了 <strong>On Error</strong> 來幫助你處理錯誤，避免程式崩潰。常見的錯誤處理關鍵字有 <strong>On Error Resume Next</strong> 和 <strong>On Error GoTo</strong>。</p>
+<h4 id="--on-error-resume-next">- <strong>On Error Resume Next</strong></h4>
+<p><strong>On Error Resume Next</strong> 讓程式忽略發生的錯誤，繼續執行下一行指令。但這需要謹慎使用，因為錯誤可能會被忽視。</p>
+<pre tabindex="0"><code>On Error Resume Next
+&#39; 嘗試除以零，這會產生錯誤
+Dim 結果 As Double
+結果 = 10 / 0
+MsgBox &#34;結果：&#34; &amp; 結果
+On Error GoTo 0 &#39; 關閉錯誤處理
+</code></pre><h4 id="--on-error-goto">- <strong>On Error GoTo</strong></h4>
+<p><strong>On Error GoTo</strong> 允許你在發生錯誤時跳轉到特定程式碼段，處理錯誤後再繼續。</p>
+<pre tabindex="0"><code>Sub 錯誤處理範例()
+    On Error GoTo 錯誤處理
+    Dim x As Integer
+    x = 10 / 0 &#39; 會觸發錯誤
+    Exit Sub
+錯誤處理:
+    MsgBox &#34;發生錯誤：&#34; &amp; Err.Description
 End Sub
-</code></pre><ol start="4">
-<li>執行巨集：按下 F5 鍵來執行這段程式碼，或回到 Excel，在「開發人員」功能區中點擊「巨集」按鈕，選擇你撰寫的巨集來執行。</li>
+</code></pre><h2 id="錯誤處理範例">錯誤處理範例：</h2>
+<pre tabindex="0"><code>Sub 錯誤處理範例()
+    On Error GoTo 錯誤處理 &#39; 啟用錯誤處理
+    Dim 結果 As Integer
+    結果 = 10 / 0 &#39; 嘗試除以零，這會產生錯誤
+    MsgBox &#34;結果：&#34; &amp; 結果
+    Exit Sub
+    
+錯誤處理:
+    MsgBox &#34;發生錯誤：&#34; &amp; Err.Description
+End Sub
+</code></pre><h5 id="--解釋">- 解釋：</h5>
+<ol>
+<li>On Error GoTo 錯誤處理：告訴 VBA 如果發生錯誤，跳轉到標籤 &ldquo;錯誤處理&rdquo;。</li>
+<li>發生除以零的錯誤時，VBA 會執行錯誤處理部分並顯示錯誤訊息。</li>
 </ol>
-<p>這段程式碼會自動在 Excel 中的 A1 到 A10 儲存格填入「Hello」，簡化了手動輸入資料的流程。</p>
+<p>這種方式可以避免程式崩潰，並且可以讓你定義如何處理錯誤。</p>
+<hr>
 <h2 id="小結">小結</h2>
-<p>學習 VBA 不僅能夠幫助你自動化日常工作，還能大大提升工作效率。無論是簡單的資料填充，還是複雜的報告生成，VBA 都能為你提供靈活的解決方案。通過不斷練習和探索，你將發現 VBA 是一個強大的工具，幫助你在 Excel 中輕鬆完成自動化任務。</p>
-<h4 id="重點提示">重點提示：</h4>
-<ul>
-<li>自動化工作流程：通過 VBA 自動處理重複性任務。</li>
-<li>避免手動錯誤：程式自動化能避免人為錯誤，提高數據準確性。</li>
-<li>靈活擴展 Excel 功能：自行撰寫巨集，滿足特定需求。</li>
-</ul>
-<p>透過這些技巧，你將逐步掌握 VBA，讓 Excel 成為更高效的工作夥伴！</p>
+<p>在這篇文章中，我們介紹了 VBA 中的控制流程關鍵字，如 <strong>Select Case</strong>，以及錯誤處理的關鍵字 <strong>On Error Resume Next</strong> 和 <strong>On Error GoTo</strong>。這些關鍵字能夠幫助你撰寫出更靈活且穩定的程式，處理不同情境中的分支邏輯並避免意外的錯誤中斷程式。</p>
+<p>透過這些進階技巧，你將能進一步提升 VBA 的應用範圍，為你的程式增強穩定性和可靠性。</p>
 <hr>
 <h2 id="為什麼需要學習-vba自動化-excel-任務的關鍵技能">為什麼需要學習 VBA？自動化 Excel 任務的關鍵技能</h2>
 <p>學習 VBA（Visual Basic for Applications） 是每位 Excel 使用者提升效率的關鍵。VBA 不僅可以大幅提升數據處理的速度，還能讓我們在工作中自動化多種任務。透過撰寫簡單的程式碼，你可以自動化重複性工作，並大大減少人為錯誤。</p>
@@ -297,7 +313,7 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_intro.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -307,8 +323,8 @@ End Sub
               <span>28 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -316,7 +332,26 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_events_and_custom_functions.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_control_flow.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>28 Sep 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/vba-control_flow/" class="h5 d-block mb-3">VBA 關鍵字進階指南：控制流程與錯誤處理 (第三篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-control_flow/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_events_and_custom_functions.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -326,27 +361,8 @@ End Sub
               <span>27 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>26 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -370,33 +386,33 @@ End Sub
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
-        <a href="https://CodingDog666.github.io/"><img src="https://CodingDog666.github.io/images/logo1.png" alt="CodingDog"></a>
+        <a href="http://localhost:1313/"><img src="http://localhost:1313/images/logo1.png" alt="CodingDog"></a>
       </div>
       
       
 <script>
-  var indexURL = "https://CodingDog666.github.io/index.json"
+  var indexURL = "http://localhost:1313/index.json"
 </script>
 
 <!-- JS Plugins -->
 
-<script src="https://CodingDog666.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/slick/slick.min.js"></script>
+<script src="http://localhost:1313/plugins/slick/slick.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/venobox/venobox.min.js"></script>
+<script src="http://localhost:1313/plugins/venobox/venobox.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/fuse.min.js"></script>
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/mark.js"></script>
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
 
-<script src="https://CodingDog666.github.io/plugins/search/search.js"></script>
+<script src="http://localhost:1313/plugins/search/search.js"></script>
 
 <!-- Main Script -->
 
-<script src="https://CodingDog666.github.io/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
 
 
@@ -497,71 +513,87 @@ End Sub
           <span>By CordingDog</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>22 September 2024</span>
+          <span>28 September 2024</span>
           
         </div>
         
         
         
         <div class="content mb-5">
-          <h1 id="撰寫你的第一個vba巨集提升-excel-自動化效率的必備技能">撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能</h1>
-<img src="../../images/VBA/vba_intro%e5%b0%81%e9%9d%a2.png" alt="VBA 簡介" loading="lazy">
+          <h1 id="vba-關鍵字進階指南控制流程與錯誤處理">VBA 關鍵字進階指南：控制流程與錯誤處理</h1>
+<img src="../../images/VBA/vba_control_flow.png" alt="VBA 控制流程" loading="lazy">
 
-<p>VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</p>
-<h2 id="vba-是什麼">VBA 是什麼？</h2>
-<p>VBA 是一種編程語言，專門設計來擴展 Microsoft Office 應用程式的功能。通過 VBA，你可以記錄和執行巨集（macros），這些巨集能夠幫助你完成繁瑣的任務，如自動輸入數據、生成報告、格式化表格等等。使用 VBA 的核心目的是將重複性任務自動化，讓 Excel 的功能更強大、更靈活。</p>
-<h3 id="學習-vba-的好處">學習 VBA 的好處</h3>
-<ul>
-<li><strong>自動化日常任務</strong>：減少人工操作，提升工作效率。</li>
-<li><strong>提升精準度</strong>：程式控制下避免手動錯誤，確保數據的正確性。</li>
-<li><strong>擴展功能</strong>：VBA 允許你設計自訂功能，根據特定需求進行操作。</li>
-<li><strong>跨應用整合</strong>：VBA 支援不同 Microsoft 應用程式的整合，例如讓 Excel 與 Outlook 互動，實現自動發送報表等功能。</li>
-</ul>
-<h2 id="如何啟用-excel-的-vba-編輯器">如何啟用 Excel 的 VBA 編輯器</h2>
-<p>如果你還沒有接觸過 VBA，這裡是簡單的開啟步驟：</p>
-<ol>
-<li><strong>啟用開發人員選項</strong>：打開 Excel，點擊「檔案」→「選項」→「自訂功能區」，勾選「開發人員」選項。</li>
-</ol>
-<img src="../../images/VBA/vba_intro1.png" alt="VBA 簡介" loading="lazy">
-
-<ol start="2">
-<li><strong>開啟 VBA 編輯器</strong>：選擇 Excel 的「開發人員」選項卡，點擊「Visual Basic」按鈕，進入 VBA 編輯器。</li>
-</ol>
-<img src="../../images/VBA/vba_intro2.png" alt="VBA 簡介" loading="lazy">
-
-<h2 id="vba-的基本語法介紹">VBA 的基本語法介紹</h2>
-<p>撰寫 VBA 程式並不困難，從簡單的語法學起，你很快就能上手。以下介紹 VBA 的基礎語法結構。</p>
-<h3 id="巨集與-sub-程式">巨集與 Sub 程式</h3>
-<p>在 VBA 中，巨集是使用 <strong>Sub&hellip;End Sub</strong> 來定義的。每個 Sub 程式都能執行特定的任務，例如資料處理或自動化操作。</p>
-<h4 id="sub-程式語法範例">Sub 程式語法範例</h4>
-<p>以下是 Sub 和 End Sub 的語法範例：</p>
-<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 我的第一個巨集()
-    MsgBox &#34;Hello, world!&#34; &#39; 顯示訊息框
+<p>在前幾篇文章中，我們介紹了 VBA 的基礎關鍵字，如 <code>If...Then...Else</code>、<code>For...Next</code> 等。在這篇文章中，我們將深入探討兩個更進階的主題：<strong>控制流程</strong> 和 <strong>錯誤處理</strong>。這些概念將幫助你撰寫更加靈活且健壯的程式。</p>
+<hr>
+<h2 id="1-控制流程關鍵字">1. 控制流程關鍵字</h2>
+<p>VBA 提供多種控制流程的關鍵字，用來決定程式如何處理不同情境中的指令。其中一個非常有用的關鍵字是 <code>Select Case</code>，它能簡化多條件的判斷。</p>
+<h3 id="select-case-語法">Select Case 語法</h3>
+<pre tabindex="0"><code>Select Case 表達式
+    Case 值1
+        &#39; 當表達式等於值1時執行的動作
+    Case 值2
+        &#39; 當表達式等於值2時執行的動作
+    Case Else
+        &#39; 當所有條件都不符合時執行的動作
+End Select
+</code></pre><h2 id="範例">範例：</h2>
+<pre tabindex="0"><code>Sub 確認成績()
+    Dim 分數 As Integer
+    分數 = 85
+    Select Case 分數
+        Case Is &gt;= 90
+            MsgBox &#34;成績：A&#34;
+        Case Is &gt;= 80
+            MsgBox &#34;成績：B&#34;
+        Case Is &gt;= 70
+            MsgBox &#34;成績：C&#34;
+        Case Else
+            MsgBox &#34;成績不及格&#34;
+    End Select
 End Sub
-</code></pre><p>當你執行這段程式時，Excel 會顯示訊息框「Hello, world!」。這是一個簡單的開始，你可以在 VBA 中進一步探索如何控制 Excel 的行為。</p>
-<h2 id="如何撰寫第一個-excel-巨集">如何撰寫第一個 Excel 巨集</h2>
-<p>現在我們來學習如何撰寫並執行一個簡單的巨集。</p>
-<ol>
-<li><em><strong>開啟開發人員工具列</strong></em>：啟用開發人員選項，打開 Excel 的「開發人員」功能區。</li>
-<li><em><strong>進入 VBA 編輯器</strong></em>：點擊「Visual Basic」，進入 VBA 編輯器介面。</li>
-<li><em><strong>撰寫巨集程式</strong></em>：在 VBA 編輯器中，點擊「插入」→「模組」來建立一個新模組，然後在模組中輸入以下程式碼：</li>
-</ol>
-<pre tabindex="0"><code>Sub 自動填充資料()
-    Range(&#34;A1:A10&#34;).Value = &#34;Hello&#34;
+</code></pre><p>這個範例根據分數的範圍顯示相應的成績評級，使用 Select Case 可以使多條件判斷的程式更加整潔明瞭。</p>
+<hr>
+<h2 id="2-錯誤處理關鍵字">2. 錯誤處理關鍵字</h2>
+<p>程式在執行過程中，難免會遇到錯誤。VBA 提供了 <strong>On Error</strong> 來幫助你處理錯誤，避免程式崩潰。常見的錯誤處理關鍵字有 <strong>On Error Resume Next</strong> 和 <strong>On Error GoTo</strong>。</p>
+<h4 id="--on-error-resume-next">- <strong>On Error Resume Next</strong></h4>
+<p><strong>On Error Resume Next</strong> 讓程式忽略發生的錯誤，繼續執行下一行指令。但這需要謹慎使用，因為錯誤可能會被忽視。</p>
+<pre tabindex="0"><code>On Error Resume Next
+&#39; 嘗試除以零，這會產生錯誤
+Dim 結果 As Double
+結果 = 10 / 0
+MsgBox &#34;結果：&#34; &amp; 結果
+On Error GoTo 0 &#39; 關閉錯誤處理
+</code></pre><h4 id="--on-error-goto">- <strong>On Error GoTo</strong></h4>
+<p><strong>On Error GoTo</strong> 允許你在發生錯誤時跳轉到特定程式碼段，處理錯誤後再繼續。</p>
+<pre tabindex="0"><code>Sub 錯誤處理範例()
+    On Error GoTo 錯誤處理
+    Dim x As Integer
+    x = 10 / 0 &#39; 會觸發錯誤
+    Exit Sub
+錯誤處理:
+    MsgBox &#34;發生錯誤：&#34; &amp; Err.Description
 End Sub
-</code></pre><ol start="4">
-<li>執行巨集：按下 F5 鍵來執行這段程式碼，或回到 Excel，在「開發人員」功能區中點擊「巨集」按鈕，選擇你撰寫的巨集來執行。</li>
+</code></pre><h2 id="錯誤處理範例">錯誤處理範例：</h2>
+<pre tabindex="0"><code>Sub 錯誤處理範例()
+    On Error GoTo 錯誤處理 &#39; 啟用錯誤處理
+    Dim 結果 As Integer
+    結果 = 10 / 0 &#39; 嘗試除以零，這會產生錯誤
+    MsgBox &#34;結果：&#34; &amp; 結果
+    Exit Sub
+    
+錯誤處理:
+    MsgBox &#34;發生錯誤：&#34; &amp; Err.Description
+End Sub
+</code></pre><h5 id="--解釋">- 解釋：</h5>
+<ol>
+<li>On Error GoTo 錯誤處理：告訴 VBA 如果發生錯誤，跳轉到標籤 &ldquo;錯誤處理&rdquo;。</li>
+<li>發生除以零的錯誤時，VBA 會執行錯誤處理部分並顯示錯誤訊息。</li>
 </ol>
-<p>這段程式碼會自動在 Excel 中的 A1 到 A10 儲存格填入「Hello」，簡化了手動輸入資料的流程。</p>
+<p>這種方式可以避免程式崩潰，並且可以讓你定義如何處理錯誤。</p>
+<hr>
 <h2 id="小結">小結</h2>
-<p>學習 VBA 不僅能夠幫助你自動化日常工作，還能大大提升工作效率。無論是簡單的資料填充，還是複雜的報告生成，VBA 都能為你提供靈活的解決方案。通過不斷練習和探索，你將發現 VBA 是一個強大的工具，幫助你在 Excel 中輕鬆完成自動化任務。</p>
-<h4 id="重點提示">重點提示：</h4>
-<ul>
-<li>自動化工作流程：通過 VBA 自動處理重複性任務。</li>
-<li>避免手動錯誤：程式自動化能避免人為錯誤，提高數據準確性。</li>
-<li>靈活擴展 Excel 功能：自行撰寫巨集，滿足特定需求。</li>
-</ul>
-<p>透過這些技巧，你將逐步掌握 VBA，讓 Excel 成為更高效的工作夥伴！</p>
+<p>在這篇文章中，我們介紹了 VBA 中的控制流程關鍵字，如 <strong>Select Case</strong>，以及錯誤處理的關鍵字 <strong>On Error Resume Next</strong> 和 <strong>On Error GoTo</strong>。這些關鍵字能夠幫助你撰寫出更靈活且穩定的程式，處理不同情境中的分支邏輯並避免意外的錯誤中斷程式。</p>
+<p>透過這些進階技巧，你將能進一步提升 VBA 的應用範圍，為你的程式增強穩定性和可靠性。</p>
 <hr>
 <h2 id="為什麼需要學習-vba自動化-excel-任務的關鍵技能">為什麼需要學習 VBA？自動化 Excel 任務的關鍵技能</h2>
 <p>學習 VBA（Visual Basic for Applications） 是每位 Excel 使用者提升效率的關鍵。VBA 不僅可以大幅提升數據處理的速度，還能讓我們在工作中自動化多種任務。透過撰寫簡單的程式碼，你可以自動化重複性工作，並大大減少人為錯誤。</p>
@@ -611,7 +643,7 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_keywords_intro.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -621,8 +653,8 @@ End Sub
               <span>28 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -630,7 +662,26 @@ End Sub
       <div class="col-lg-4 small-post-border">
         <article class="media">
           
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_events_and_custom_functions.png');"></div>
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_control_flow.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>28 Sep 2024</span>
+              
+            </div>
+            <a href="http://localhost:1313/blog/vba-control_flow/" class="h5 d-block mb-3">VBA 關鍵字進階指南：控制流程與錯誤處理 (第三篇) - CordingDog</a>
+            <a href="http://localhost:1313/blog/vba-control_flow/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('http://localhost:1313/images/VBA/vba_events_and_custom_functions.png');"></div>
           
           <div class="media-body">
             <div class="mb-3 post-meta">
@@ -640,27 +691,8 @@ End Sub
               <span>27 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-events/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_object_model.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>26 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="h5 d-block mb-3">VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-object/" class="btn btn-outline-primary">read more</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="h5 d-block mb-3">VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 - CodingDog</a>
+            <a href="http://localhost:1313/blog/vba-events/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
