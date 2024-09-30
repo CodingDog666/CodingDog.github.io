@@ -6,8 +6,15 @@
     <description>Recent content in blog on CodingDog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Sep 2024 09:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 06:07:47 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</title>
+      <link>https://CodingDog666.github.io/blog/vba-keywords_types/</link>
+      <pubDate>Mon, 30 Sep 2024 06:07:47 +0800</pubDate>
+      <guid>https://CodingDog666.github.io/blog/vba-keywords_types/</guid>
+      <description>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) 在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 Dim、Const 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</description>
+    </item>
     <item>
       <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_intro/</link>
