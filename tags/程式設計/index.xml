@@ -9,21 +9,28 @@
     <lastBuildDate>Wed, 02 Oct 2024 05:07:47 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/tags/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CordingDog</title>
+      <title>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/python-intro/</link>
       <pubDate>Wed, 02 Oct 2024 05:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/python-intro/</guid>
       <description>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 Python 是什麼？為什麼選擇 Python？ Python 是一種高階的程式語言，以其簡單的語法、易於學習和強大的功能而聞名。Python 採用直譯式執行，並支援多種編程範式，適合初學者和專業開發者。Python 的易學特性，讓其成為全球最受歡迎的程式語言之一。</description>
     </item>
     <item>
-      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</title>
+      <title>Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 - CodingDog</title>
+      <link>https://CodingDog666.github.io/blog/python-operator/</link>
+      <pubDate>Tue, 01 Oct 2024 05:07:47 +0800</pubDate>
+      <guid>https://CodingDog666.github.io/blog/python-operator/</guid>
+      <description>Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 在程式設計中，運算符和表達式是不可或缺的部分，它們允許我們在程式中進行各種計算和邏輯判斷。Python 提供了多種類型的運算符來處理數字、邏輯判斷等。本篇文章將介紹 Python 中常用的運算符及其應用。&#xA;數學運算符 數學運算符用於進行基本的數學運算，如加法、減法、乘法、除法等。Python 支援以下數學運算符：&#xA;加法（+）：將兩個數字相加。</description>
+    </item>
+    <item>
+      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_types/</link>
       <pubDate>Mon, 30 Sep 2024 06:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_types/</guid>
       <description>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) 在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 Dim、Const 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</description>
     </item>
     <item>
-      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
+      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_intro/</link>
       <pubDate>Sat, 28 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_intro/</guid>
@@ -37,7 +44,7 @@
       <description>VBA 的語法與基本操作：掌握程式設計的核心技能 VBA（Visual Basic for Applications）是一個強大的工具，可以自動化許多 Excel 的日常工作，並提升工作效率。本篇文章將帶你深入了解 VBA 的基本語法與操作，從變數、資料型別，到條件語句與循環控制，幫助你撰寫簡單且實用的程式。</description>
     </item>
     <item>
-      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
+      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-introduction/</link>
       <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-introduction/</guid>

@@ -9,28 +9,28 @@
     <lastBuildDate>Wed, 02 Oct 2024 05:07:47 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/tags/%E8%87%AA%E5%8B%95%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CordingDog</title>
+      <title>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/python-intro/</link>
       <pubDate>Wed, 02 Oct 2024 05:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/python-intro/</guid>
       <description>Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 Python 是什麼？為什麼選擇 Python？ Python 是一種高階的程式語言，以其簡單的語法、易於學習和強大的功能而聞名。Python 採用直譯式執行，並支援多種編程範式，適合初學者和專業開發者。Python 的易學特性，讓其成為全球最受歡迎的程式語言之一。</description>
     </item>
     <item>
-      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</title>
+      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_types/</link>
       <pubDate>Mon, 30 Sep 2024 06:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_types/</guid>
       <description>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) 在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 Dim、Const 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</description>
     </item>
     <item>
-      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
+      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_intro/</link>
       <pubDate>Sat, 28 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_intro/</guid>
       <description>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) VBA（Visual Basic for Applications）中有許多關鍵字，每個關鍵字都扮演著特定的功能。本篇文章將介紹幾個基礎且常用的 VBA 關鍵字，幫助你迅速掌握撰寫 VBA 程式的基本概念，並逐步深入。</description>
     </item>
     <item>
-      <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</title>
+      <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-object/</link>
       <pubDate>Thu, 26 Sep 2024 05:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-object/</guid>
@@ -44,14 +44,14 @@
       <description>VBA 的語法與基本操作：掌握程式設計的核心技能 VBA（Visual Basic for Applications）是一個強大的工具，可以自動化許多 Excel 的日常工作，並提升工作效率。本篇文章將帶你深入了解 VBA 的基本語法與操作，從變數、資料型別，到條件語句與循環控制，幫助你撰寫簡單且實用的程式。</description>
     </item>
     <item>
-      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
+      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-introduction/</link>
       <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-introduction/</guid>
       <description>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 VBA（Visual Basic for Applications）是一種嵌入於 Microsoft Office 應用程式中的程式語言，特別適合自動化日常重複性任務。本文將帶你從零開始，撰寫你的第一個 VBA 巨集，幫助你在 Excel 中提高工作效率。</description>
     </item>
     <item>
-      <title>Excel教學：快速批量建立員工資料夾，一分鐘內完成的方法！ - CordingDog</title>
+      <title>Excel教學：快速批量建立員工資料夾，一分鐘內完成的方法！ - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/excel-folder/</link>
       <pubDate>Sat, 01 Jun 2024 18:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/excel-folder/</guid>

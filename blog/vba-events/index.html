@@ -205,7 +205,7 @@
 </ul>
 <h3 id="事件驅動程式範例自動處理資料變更">事件驅動程式範例：自動處理資料變更</h3>
 <p>以下是一個簡單的事件驅動程式範例。當儲存格變更時，該程式會自動將變更紀錄至特定的工作表中。</p>
-<pre tabindex="0"><code>Private Sub Worksheet_Change(ByVal Target As Range)
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Private Sub Worksheet_Change(ByVal Target As Range)
     If Not Intersect(Target, Me.Range(&#34;A1:A10&#34;)) Is Nothing Then
         Sheets(&#34;Log&#34;).Cells(Rows.Count, 1).End(xlUp).Offset(1, 0).Value = &#34;變更於 &#34; &amp; Now
     End If
@@ -220,7 +220,7 @@ End Sub
 <p>除了事件觸發外，自訂函數（UDF, User Defined Function）能擴展 Excel 內建函數的功能，滿足更複雜的數據處理需求。自訂函數是 VBA 另一個強大的功能，它讓你能擴展 Excel 的計算能力，撰寫自定義的公式。與內建的函數不同，自訂函數可以根據具體需求設計並應用於工作表中，增加靈活性和功能。</p>
 <h5 id="自訂函數範例計算折扣價格">自訂函數範例：計算折扣價格</h5>
 <p>以下範例是一個簡單的自訂函數，用來計算產品的折扣價格：</p>
-<pre tabindex="0"><code>Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Function 計算折扣價格(原價 As Double, 折扣 As Double) As Double
     計算折扣價格 = 原價 * (1 - 折扣)
 End Function
 </code></pre><ul>
@@ -264,8 +264,10 @@ End Function
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
-<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多Excel文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多VBA文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他Python 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/python/">點我前往更多Python文章</a></strong></em></p>
+<p><em><strong>如果您想要了解實用AI，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/ai/">點我前往更多實用AI文章</a></strong></em></p>
 
         </div>
         
@@ -295,8 +297,27 @@ End Function
               <span>02 Oct 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/python-intro/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/Python/operator.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>01 Oct 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="h5 d-block mb-3">Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -314,27 +335,8 @@ End Function
               <span>30 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>28 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>

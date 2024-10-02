@@ -3,7 +3,7 @@
   <meta charset="utf-8">
     
 
-    <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
+    <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CodingDog</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -198,14 +198,14 @@
 <ul>
 <li>
 <p><strong>Sub</strong>：用來執行一段動作，但不會返回結果。Sub 程式可以包含任何程式碼邏輯，例如在 Excel 中顯示訊息框或操作儲存格。</p>
-<pre tabindex="0"><code>Sub 顯示訊息()
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 顯示訊息()
     MsgBox &#34;Hello, world!&#34;
 End Sub
 </code></pre><p>在這個範例中，<code>MsgBox</code> 函數會彈出一個訊息框顯示文字 &ldquo;Hello, world!&quot;。</p>
 </li>
 <li>
 <p><strong>Function</strong>：和 Sub 程式不同，Function 不僅執行動作，還會返回一個結果。它們經常用來進行計算並將結果傳回。</p>
-<pre tabindex="0"><code>Function 計算總和(a As Integer, b As Integer) As Integer
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Function 計算總和(a As Integer, b As Integer) As Integer
     計算總和 = a + b
 End Function
 </code></pre><p>這裡的 Function 返回兩個整數相加的結果。</p>
@@ -214,14 +214,14 @@ End Function
 <hr>
 <h2 id="2-dim宣告變數">2. Dim：宣告變數</h2>
 <p>變數是程式中儲存數據的地方，而 <strong>Dim</strong> 是用來宣告變數的關鍵字。VBA 支援多種資料型別，包括整數、字串、日期等。正確宣告變數可以提高程式執行效率，並避免執行錯誤。</p>
-<pre tabindex="0"><code>Dim 整數變數 As Integer
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Dim 整數變數 As Integer
 Dim 字串變數 As String
 Dim 日期變數 As Date
 </code></pre><p>這些範例展示了如何宣告不同型別的變數，例如 Integer 儲存整數、String 儲存文字、Date 儲存日期時間。</p>
 <hr>
 <h2 id="3-ifthenelse條件判斷">3. If&hellip;Then&hellip;Else：條件判斷</h2>
 <p>If&hellip;Then&hellip;Else 是用來進行條件判斷的關鍵字。它根據指定條件執行程式碼段落，能夠處理多種情境。例如，根據變數的值，選擇執行不同的動作。</p>
-<pre tabindex="0"><code>If x &gt; 10 Then
+<pre tabindex="0"><code class="language-vba" data-lang="vba">If x &gt; 10 Then
     MsgBox &#34;x 大於 10&#34;
 ElseIf x = 10 Then
     MsgBox &#34;x 等於 10&#34;
@@ -233,12 +233,12 @@ End If
 <h2 id="4-fornext-與-doloop迴圈結構">4. For&hellip;Next 與 Do&hellip;Loop：迴圈結構</h2>
 <p>迴圈可以讓程式重複執行某段程式碼。</p>
 <h5 id="--fornext適用於已知迴圈次數時使用典型的用法是依據一個範圍內的變數執行多次迴圈">- <strong>For&hellip;Next</strong>：適用於已知迴圈次數時使用，典型的用法是依據一個範圍內的變數執行多次迴圈。</h5>
-<pre tabindex="0"><code>For i = 1 To 10
+<pre tabindex="0"><code class="language-vba" data-lang="vba">For i = 1 To 10
     Cells(i, 1).Value = i
 Next i
 </code></pre><p>這段程式會在 Excel 的 A1 到 A10 儲存格中填入 1 到 10。</p>
 <h5 id="--doloop當迴圈次數未知或依條件結束時使用例如可以在條件滿足前重複執行某段程式碼">- <strong>Do&hellip;Loop</strong>：當迴圈次數未知或依條件結束時使用。例如，可以在條件滿足前重複執行某段程式碼。</h5>
-<pre tabindex="0"><code>i = 1
+<pre tabindex="0"><code class="language-vba" data-lang="vba">i = 1
 Do While Cells(i, 1).Value &lt;&gt; &#34;&#34;
     i = i + 1
 Loop
@@ -246,7 +246,7 @@ Loop
 <hr>
 <h2 id="範例計算並顯示總和">範例：計算並顯示總和</h2>
 <p>我們來看看如何使用這些關鍵字編寫一個 VBA 範例，計算 A1 到 A10 的總和，並顯示結果：</p>
-<pre tabindex="0"><code>Sub 計算總和()
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 計算總和()
     Dim 總和 As Double
     Dim i As Integer
     總和 = 0
@@ -288,8 +288,10 @@ End Sub
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
-<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多Excel文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多VBA文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他Python 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/python/">點我前往更多Python文章</a></strong></em></p>
+<p><em><strong>如果您想要了解實用AI，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/ai/">點我前往更多實用AI文章</a></strong></em></p>
 
         </div>
         
@@ -319,8 +321,27 @@ End Sub
               <span>02 Oct 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/python-intro/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/Python/operator.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>01 Oct 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="h5 d-block mb-3">Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -338,27 +359,8 @@ End Sub
               <span>30 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>28 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>

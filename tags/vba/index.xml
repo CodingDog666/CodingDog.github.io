@@ -9,14 +9,14 @@
     <lastBuildDate>Mon, 30 Sep 2024 06:07:47 +0800</lastBuildDate>
     <atom:link href="https://CodingDog666.github.io/tags/vba/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</title>
+      <title>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_types/</link>
       <pubDate>Mon, 30 Sep 2024 06:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_types/</guid>
       <description>VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) 在 VBA 中，宣告變數和常量是撰寫程式的基礎步驟。正確使用 Dim、Const 等關鍵字，並選擇合適的資料型別，不僅能提升程式的執行效率，也能避免潛在的錯誤。在本篇文章中，我們將深入探討 VBA 中的資料型別與常量宣告。</description>
     </item>
     <item>
-      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</title>
+      <title>VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-keywords_intro/</link>
       <pubDate>Sat, 28 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-keywords_intro/</guid>
@@ -30,7 +30,7 @@
       <description>VBA 中的事件與自訂函數：掌握事件驅動程式和撰寫自訂函數 在 VBA 中，事件驅動程式和自訂函數是強大且靈活的工具，能大幅提升 Excel 自動化的應用範圍。這篇文章將深入介紹如何使用事件與自訂函數來處理資料變更和增加 Excel 的功能。&#xA;什麼是事件驅動程式？ 事件驅動程式是當 Excel 發生某種事件（如打開工作簿、變更儲存格內容）時自動觸發的程式碼。這類程式碼能在特定情況下自動執行，減少人工操作，提升自動化效率。</description>
     </item>
     <item>
-      <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</title>
+      <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-object/</link>
       <pubDate>Thu, 26 Sep 2024 05:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-object/</guid>
@@ -44,7 +44,7 @@
       <description>VBA 的語法與基本操作：掌握程式設計的核心技能 VBA（Visual Basic for Applications）是一個強大的工具，可以自動化許多 Excel 的日常工作，並提升工作效率。本篇文章將帶你深入了解 VBA 的基本語法與操作，從變數、資料型別，到條件語句與循環控制，幫助你撰寫簡單且實用的程式。</description>
     </item>
     <item>
-      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CordingDog</title>
+      <title>撰寫你的第一個VBA巨集，提升 Excel 自動化效率的必備技能 - CodingDog</title>
       <link>https://CodingDog666.github.io/blog/vba-introduction/</link>
       <pubDate>Sun, 22 Sep 2024 09:07:47 +0800</pubDate>
       <guid>https://CodingDog666.github.io/blog/vba-introduction/</guid>

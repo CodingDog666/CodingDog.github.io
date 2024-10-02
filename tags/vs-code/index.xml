@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VS Code on CodingDog</title>
+    <link>https://CodingDog666.github.io/tags/vs-code/</link>
+    <description>Recent content in VS Code on CodingDog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Oct 2024 05:07:47 +0800</lastBuildDate>
+    <atom:link href="https://CodingDog666.github.io/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 - CodingDog</title>
+      <link>https://CodingDog666.github.io/blog/python-operator/</link>
+      <pubDate>Tue, 01 Oct 2024 05:07:47 +0800</pubDate>
+      <guid>https://CodingDog666.github.io/blog/python-operator/</guid>
+      <description>Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 在程式設計中，運算符和表達式是不可或缺的部分，它們允許我們在程式中進行各種計算和邏輯判斷。Python 提供了多種類型的運算符來處理數字、邏輯判斷等。本篇文章將介紹 Python 中常用的運算符及其應用。&#xA;數學運算符 數學運算符用於進行基本的數學運算，如加法、減法、乘法、除法等。Python 支援以下數學運算符：&#xA;加法（+）：將兩個數字相加。</description>
+    </item>
+  </channel>
+</rss>

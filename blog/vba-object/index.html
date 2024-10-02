@@ -3,7 +3,7 @@
   <meta charset="utf-8">
     
 
-    <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CordingDog</title>
+    <title>VBA 中的物件模型：如何與 Excel 工作簿、工作表和儲存格互動 - CodingDog</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -204,22 +204,22 @@
 <h2 id="重要的-excel-物件">重要的 Excel 物件</h2>
 <h3 id="1-workbook-工作簿">1. <strong>Workbook (工作簿)</strong></h3>
 <p><strong>Workbook</strong> 代表 Excel 檔案。每個工作簿包含多個工作表，使用 VBA 可以開啟、關閉或儲存工作簿。範例：</p>
-<pre tabindex="0"><code>Workbooks.Add &#39; 新增一個新的工作簿
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Workbooks.Add &#39; 新增一個新的工作簿
 Workbooks(&#34;Example.xlsx&#34;).Close &#39; 關閉名為 Example 的工作簿
 </code></pre><h3 id="2-worksheet-工作表">2. <strong>Worksheet (工作表)</strong></h3>
 <p><strong>Worksheet</strong> 代表 Excel 中的單張工作表。可以新增、刪除、複製和命名工作表。範例：</p>
-<pre tabindex="0"><code>Worksheets.Add &#39; 新增一個新的工作表
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Worksheets.Add &#39; 新增一個新的工作表
 Worksheets(&#34;Sheet1&#34;).Name = &#34;新工作表&#34; &#39; 更改工作表名稱
 </code></pre><h3 id="3-range-儲存格範圍"><strong>3. Range (儲存格範圍)</strong></h3>
 <p><strong>Range</strong> 是 Excel 中最常用的物件之一，代表工作表中的一個或多個儲存格。透過 VBA，您可以讀取或修改儲存格內容、格式和其他屬性。範例：</p>
-<pre tabindex="0"><code>Range(&#34;A1&#34;).Value = &#34;Hello&#34; &#39; 在 A1 儲存格中填入資料
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Range(&#34;A1&#34;).Value = &#34;Hello&#34; &#39; 在 A1 儲存格中填入資料
 Range(&#34;A1:A10&#34;).Font.Bold = True &#39; 將 A1 到 A10 的文字設為粗體
 </code></pre><hr>
 <h2 id="使用-vba-操作-excel-工作表和儲存格">使用 VBA 操作 Excel 工作表和儲存格</h2>
 <p>VBA 允許您自動化各種 Excel 任務，從新增工作表到格式化範圍。了解這些物件及其操作方式後，您可以輕鬆撰寫程式來管理工作簿和數據。</p>
 <h4 id="自動新增命名與格式化工作表的範例">自動新增、命名與格式化工作表的範例</h4>
 <p>下面是一個簡單的 VBA 範例，示範如何自動新增工作表、命名它，並且在特定範圍內填入資料和格式化。</p>
-<pre tabindex="0"><code>Sub 自動化工作表操作()
+<pre tabindex="0"><code class="language-vba" data-lang="vba">Sub 自動化工作表操作()
     &#39; 新增工作表並命名
     Dim ws As Worksheet
     Set ws = Worksheets.Add
@@ -261,8 +261,10 @@ End Sub
 </ul>
 <hr>
 <h2 id="延伸閱讀">延伸閱讀</h2>
-<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多文章</a></strong></em></p>
-<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入了解 Excel 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/excel/">點我前往更多Excel文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他VBA 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/vba%E5%B7%A8%E9%9B%86/">點我前往更多VBA文章</a></strong></em></p>
+<p><em><strong>如果您想要更深入其他Python 的使用技巧，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/python/">點我前往更多Python文章</a></strong></em></p>
+<p><em><strong>如果您想要了解實用AI，請點擊以下連結閱讀更多相關文章：<a href="https://codingdog666.github.io/categories/ai/">點我前往更多實用AI文章</a></strong></em></p>
 
         </div>
         
@@ -292,8 +294,27 @@ End Sub
               <span>02 Oct 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-intro/" class="h5 d-block mb-3">Python 是什麼？為什麼選擇 Python？Python 簡介與安裝指南 - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/python-intro/" class="btn btn-outline-primary">read more</a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="col-lg-4 small-post-border">
+        <article class="media">
+          
+          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/Python/operator.png');"></div>
+          
+          <div class="media-body">
+            <div class="mb-3 post-meta">
+              <span>By CordingDog</span>
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              <span>01 Oct 2024</span>
+              
+            </div>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="h5 d-block mb-3">Python 的運算符與表達式：數學運算、邏輯判斷與條件計算解析 - CodingDog</a>
+            <a href="https://CodingDog666.github.io/blog/python-operator/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
@@ -311,27 +332,8 @@ End Sub
               <span>30 Sep 2024</span>
               
             </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CordingDog</a>
+            <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="h5 d-block mb-3">VBA 關鍵字簡介：資料型別與常量宣告 (第二篇) - CodingDog</a>
             <a href="https://CodingDog666.github.io/blog/vba-keywords_types/" class="btn btn-outline-primary">read more</a>
-          </div>
-        </article>
-      </div>
-      
-      <div class="col-lg-4 small-post-border">
-        <article class="media">
-          
-          <div class="recent-post-thumb mr-3" style="background-image: url('https://CodingDog666.github.io/images/VBA/vba_keywords_intro.png');"></div>
-          
-          <div class="media-body">
-            <div class="mb-3 post-meta">
-              <span>By CordingDog</span>
-              
-              <span class="border-bottom border-primary px-2 mx-1"></span>
-              <span>28 Sep 2024</span>
-              
-            </div>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="h5 d-block mb-3">VBA 關鍵字簡介：學習程式設計的基石 (第一篇) - CordingDog</a>
-            <a href="https://CodingDog666.github.io/blog/vba-keywords_intro/" class="btn btn-outline-primary">read more</a>
           </div>
         </article>
       </div>
